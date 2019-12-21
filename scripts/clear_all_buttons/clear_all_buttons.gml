@@ -1,0 +1,3 @@
+with(objGUIButton){
+    buttonPressed = false;
+}

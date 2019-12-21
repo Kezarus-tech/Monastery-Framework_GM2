@@ -1,0 +1,2 @@
+#macro GUI_TOPLEFT 1
+#macro GUI_CENTER 2
