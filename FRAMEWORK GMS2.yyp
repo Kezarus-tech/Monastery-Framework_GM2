@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "3a2ac0b4-82fe-45d4-8e33-27b657997d31",
+            "Value": {
+                "id": "0fc35173-ac0c-464a-92ef-c7813feab9f7",
+                "resourcePath": "objects\\pnlModalSO\\pnlModalSO.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3a97cf53-e999-4949-9480-32f78796cabd",
             "Value": {
                 "id": "fe2cdc2d-8b45-44e0-90af-98441abea06e",
@@ -323,6 +331,14 @@
             "Value": {
                 "id": "be708c9a-9df6-4dfa-81ce-4e52a154d996",
                 "resourcePath": "views\\5593cfa2-af64-46be-a6aa-7699882fe59d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "57890446-20c6-4fa6-9224-f5b7259bea49",
+            "Value": {
+                "id": "3ace3577-1bc8-41d3-badf-b9e2f2ce7f2b",
+                "resourcePath": "views\\57890446-20c6-4fa6-9224-f5b7259bea49.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -444,6 +460,14 @@
                 "id": "bdc68390-4232-4375-8a59-6be8586f1784",
                 "resourcePath": "rooms\\roomMainFramework\\roomMainFramework.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "72c6d1b6-4fad-4792-8964-228977d775db",
+            "Value": {
+                "id": "33980292-059e-4605-9a72-3be1df955f8e",
+                "resourcePath": "objects\\objModalSO\\objModalSO.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1052,6 +1076,14 @@
                 "id": "836cf535-50e9-4b1d-920d-134366d85f4b",
                 "resourcePath": "sounds\\musicChant\\musicChant.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "f7a8da12-31a4-461f-be3c-0759470db6ee",
+            "Value": {
+                "id": "262b893a-2bf3-4685-ace9-346568e3e92f",
+                "resourcePath": "rooms\\roomModalSO\\roomModalSO.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

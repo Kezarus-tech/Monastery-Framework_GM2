@@ -1,16 +1,16 @@
-/// @description gui_create_button( x, y, width, height, text, function, [function arg0], [function arg1], [function arg2], [function arg3], [function arg4], [function arg5] )
+/// @description gui_create_button( x, y, width, height, text, function, function_arg0*, function_arg1*, function_arg2*, function_arg3*, function_arg4*, function_arg5* )
 /// @param  x
 /// @param  y
 /// @param  width
 /// @param  height
 /// @param  text
 /// @param  function
-/// @param  [function arg0]
-/// @param  [function arg1]
-/// @param  [function arg2]
-/// @param  [function arg3]
-/// @param  [function arg4]
-/// @param  [function arg5] 
+/// @param  function_arg0*
+/// @param  function_arg1*
+/// @param  function_arg2*
+/// @param  function_arg3*
+/// @param  function_arg4*
+/// @param  function_arg5*
 
 // returns the object ID
 
@@ -22,7 +22,7 @@ inst.text = argument[4];
 inst.targetScript = argument[5];
 
 for (var i=6; i<argument_count; i++){
-    inst.targetScriptArgs[6-i] = argument[i];
+    inst.targetScriptArgs[i-6] = argument[i];
 };
 
 

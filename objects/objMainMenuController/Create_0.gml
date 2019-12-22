@@ -10,7 +10,7 @@ var btnHeight = 40;
 var btnOffset = 5;
 
 width = (offset*2) + btnWidth;
-height = (offset*2) + btnHeight + ((btnHeight+btnOffset) * 5);
+height = (offset*2) + btnHeight + ((btnHeight+btnOffset) * 6);
 
 x = (ww div 2) //middle of the screen
     -(width div 2);
@@ -36,6 +36,9 @@ gui_create_button(wx, wy, btnWidth, btnHeight, "Options", func_room_goto, roomOp
 
 wy += btnHeight + btnOffset;
 gui_create_button(wx, wy, btnWidth, btnHeight, "Shake", func_room_goto, roomShake);
+
+wy += btnHeight + btnOffset;
+gui_create_button(wx, wy, btnWidth, btnHeight, "Modals SO", func_room_goto, roomModalSO);
 
 wy += btnHeight + btnOffset;
 gui_create_button(wx, wy, btnWidth, btnHeight, "Quit", func_game_end);
