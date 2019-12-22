@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "125de3be-ec22-453d-b4e8-2a080b4bcf7d",
+            "Value": {
+                "id": "3de8c504-59a4-40ff-9d9b-148b01c56a3b",
+                "resourcePath": "extensions\\DialogModule\\DialogModule.yy",
+                "resourceType": "GMExtension"
+            }
+        },
+        {
             "Key": "13744f46-43b8-4481-a914-d7bd72782c8f",
             "Value": {
                 "id": "58d39b54-e557-4e18-a451-1cb584642a9e",
@@ -332,6 +340,14 @@
                 "id": "be708c9a-9df6-4dfa-81ce-4e52a154d996",
                 "resourcePath": "views\\5593cfa2-af64-46be-a6aa-7699882fe59d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "56c7ca05-e4cc-4324-9209-5415c4d5b5e1",
+            "Value": {
+                "id": "a6226c48-bbff-40ce-a3ce-a195cccb0fcc",
+                "resourcePath": "extensions\\FileManager\\FileManager.yy",
+                "resourceType": "GMExtension"
             }
         },
         {

@@ -1,7 +1,7 @@
 /* set the owner window for the dialogs;
 the default is the foreground window. */
 
-/*
+
 widget_set_owner(hwnd_main);
 
 // only concerns Linux/x11
@@ -12,13 +12,13 @@ if (os_type == os_linux) {
 
 // set an icon for the dialogs from a *.png file.
 widget_set_icon(working_directory + "/icon.png");
-*/
+
 
 /* variant argument types are not supported. use 
 string or real where specified in the docs. docs
 can be read at http://dialogmodule.weebly.com */
 
-/*
+
 widget_set_caption("DialogModule");
 str = show_message("Hello World!");
 show_message(string(str));
@@ -91,8 +91,6 @@ else
 
 str = get_color_ext(c_red, title);
 show_message(string(str));
-*/
 
-alert("Da bin ich");
 
 instance_destroy();

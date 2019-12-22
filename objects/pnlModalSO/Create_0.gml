@@ -17,6 +17,12 @@ var wy = y + offset;
 
 gui_create_button(wx, wy, btnWidth, btnHeight, "Demo Modals", instance_create, 0, 0, objModalSO );
 
-wy += btnHeight + (btnOffset*2);
+wy += btnHeight + btnOffset;
 gui_create_button(wx, wy, btnWidth, btnHeight, "Main Menu", func_room_goto, roomMainFramework);
 
+
+wy += btnHeight + btnOffset + offset + offset;
+creditsX = wx;
+creditsY = wy;
+credits =	"MADE BY:#" +
+			"Samuel Venable";
