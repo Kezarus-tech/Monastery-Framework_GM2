@@ -1,6 +1,6 @@
 event_inherited();
-///CUSTOMIZEABLE VARIABLES
 
+#region CUSTOMIZEABLE VARIABLES
 width = 200;
 height = 50;
 
@@ -13,7 +13,9 @@ scrollWidth = 20;
 
 lstContent = ds_list_create();
 
-///INTERNAL VARS
+#endregion
+
+#region INTERNAL VARS
 linesMax = 0;
 linesNow = 0;
 
@@ -25,3 +27,4 @@ scrollBar = noone;
 //deactivate what is outside the panel
 changed = true;
 
+#endregion

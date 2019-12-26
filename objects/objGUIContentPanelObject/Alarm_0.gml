@@ -1,5 +1,7 @@
 event_inherited();
-///ORGANIZE COMPONENTS
+
+
+#region ORGANIZE COMPONENTS
 var inst = noone;
 
 var wx = x + borderOffset;
@@ -20,6 +22,7 @@ for(var i=0; i<ds_list_size(lstContent); i++){
         linesMax += 1;
     }
 }
+#endregion
 
 //HOW MANY LINE FIT IN THE PANEL?
 var linesInPanel = (height-(borderOffset*2)+elementOffset) div ( elementHeight+elementOffset );
@@ -33,6 +36,4 @@ scrollBar = gui_create_slider(
                 x+width-scrollWidth, y,
                 scrollWidth, height, scrollWidth-2, scrollWidth, 
                 0, linesMax);
-
-
 

@@ -1,5 +1,6 @@
 event_inherited();
-///DRAW TEXT
+
+#region DRAW TEXT
 
 if( text != "" ){
     var textX = 0;
@@ -24,7 +25,7 @@ if( text != "" ){
     //DRAW TEXT
     draw_text_outline( textX, textY, displayText, -1, 1000, c_black, fontScale );
     
-    //DRAW MARKED AREA    
+    #region DRAW MARKED AREA    
     if( onFocus && cursorSelectPosition != -1){
         draw_set_colour(c_ltgray);
         draw_set_alpha(0.3);
@@ -48,7 +49,7 @@ if( text != "" ){
         
         draw_set_alpha(1);
     }
+	#endregion
 }
 
-
-
+#endregion

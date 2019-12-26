@@ -1,5 +1,6 @@
 event_inherited();
-///CREATE OBJECTS
+
+#region CREATE OBJECTS
 
 //SETUP
 var offset = 20;
@@ -28,9 +29,9 @@ inst.height = btnHeight div 4;
 
 wy += btnHeight + btnOffset;
 inst = gui_create_button(wx, wy, btnWidth, btnHeight, "Main Menu", func_room_goto, roomMainFramework);
+#endregion
 
-
-///LOAD INI
+#region LOAD INI
 fileName = "CONFIG.INI";
 var value;
 
@@ -43,4 +44,4 @@ value = ini_read_real("prefs", "sound", 100);
 sldSound.valueUpdate = value;
 
 ini_close();
-
+#endregion

@@ -1,6 +1,6 @@
 event_inherited();
-///MOUSE WHEEL UP DOWN
 
+#region MOUSE WHEEL UP DOWN
 if(mouseOver){
     var changed = false;
     
@@ -19,11 +19,14 @@ if(mouseOver){
         scrollBar.valueUpdate = textIndex;
     }
 }
+#endregion
 
-///UPDATE BY THE SCROLLBAR
+#region UPDATE BY THE SCROLLBAR
 if(instance_exists(scrollBar)){
     textIndex = clamp(scrollBar.valueFinal, 0, array_length_1d(arrText));
 }
+
+#endregion
 
 
 

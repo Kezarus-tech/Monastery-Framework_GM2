@@ -1,4 +1,5 @@
-/// @description CREATE BUTTONS & SETUP HEIGHT
+
+#region CREATE BUTTONS & SETUP HEIGHT
 draw_set_font(fontType);
 var textHeight = string_height_ext(string_hash_to_newline(text), -1, width-(fontOffset*2));
 
@@ -23,10 +24,7 @@ for(var i=0; i<array_length_1d(arrOptions); i++){
 
 height = wy - y - buttonOffset + fontOffset;
 
-
-
-
-
+#endregion
 
 ///VISIBLE = TRUE
 visible = true;

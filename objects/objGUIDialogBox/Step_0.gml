@@ -1,5 +1,6 @@
 event_inherited();
-///GET ANYKEY
+
+#region GET ANYKEY
 if(mouseOver || dontNeedToBeOnFocus){
     if( keyboard_check_pressed(vk_anykey) || mouse_check_button_pressed(mb_any) ){
         if( waitForAnykey ){
@@ -14,4 +15,4 @@ if(mouseOver || dontNeedToBeOnFocus){
         
     }
 }
-
+#endregion

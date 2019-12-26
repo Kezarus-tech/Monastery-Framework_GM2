@@ -1,5 +1,6 @@
 event_inherited();
-///CUSTOMIZEABLE VARIABLES
+
+#region CUSTOMIZEABLE VARIABLES
 width = 200;
 height = 50;
 
@@ -16,7 +17,9 @@ textTimer = 3;
 dontNeedToBeOnFocus = false; //if set true, will capture any click on the screen and any keystrok
 sound = sndTypewriter;
 
-///INTERNAL VARS
+#endregion
+
+#region INTERNAL VARS
 textToDisplay = "";
 textIndex = 0;
 waitForAnykey = false;
@@ -26,4 +29,4 @@ fontScale = 1;
 
 alarm[1] = 1;
 
-
+#endregion

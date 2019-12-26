@@ -1,6 +1,6 @@
 event_inherited();
-///HOVER & FOCUS & BLUR
 
+#region HOVER & FOCUS & BLUR
 if( enabled ){
 
     if( mouse_check_button_released(mb_left) ){
@@ -17,8 +17,9 @@ if( enabled ){
 }else{
     image_blend = c_gray;
 }
+#endregion
 
-///SPRITE & BLEND
+#region SPRITE & BLEND
 
 if(!onFocus){
     sprite_index = guiSprite;
@@ -27,9 +28,10 @@ if(!onFocus){
     sprite_index = guiSpriteFocus;
 }
 
+#endregion
 
 
-///ON FOCUS KEYBOARD PRESS
+#region ON FOCUS KEYBOARD PRESS
 if(onFocus){
         
     if( keyTimer <= 0 ){
@@ -102,7 +104,6 @@ if(onFocus){
                 ( keyboard_check(vk_control) && keyboard_check(ord("V")) )
             ){
                 keyTimer = keyTimerLimit;
-                var wIndex, wCount;
                 if( cursorPosition > cursorSelectPosition ){
                     text = string_delete(text, cursorSelectPosition, cursorPosition-cursorSelectPosition);
                     cursorPosition = cursorSelectPosition;
@@ -135,3 +136,4 @@ if(onFocus){
     }
 }
 
+#endregion

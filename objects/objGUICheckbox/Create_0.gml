@@ -1,5 +1,6 @@
 event_inherited();
-///CUSTOMIZEABLE VARIABLES
+
+#region CUSTOMIZEABLE VARIABLES
 text = "Text"; //displayed text
 icon = sprIconCross; //sprite index
 
@@ -9,7 +10,9 @@ enabled = true;
 
 textOffset = 5;
 
-///INTERNAL VARS
+#endregion
+
+#region INTERNAL VARS
 width = sprite_width;
 height = sprite_height;
 
@@ -19,3 +22,4 @@ toggled = true;
 
 origin = GUI_TOPLEFT; //always top left
 
+#endregion

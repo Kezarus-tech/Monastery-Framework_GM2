@@ -1,5 +1,6 @@
 event_inherited();
-///CUSTOMIZEABLE VARIABLES
+
+#region CUSTOMIZEABLE VARIABLES
 
 //Bar dimensions
 width = 200;
@@ -30,12 +31,11 @@ fontColor = c_yellow;
 valueUpdate = -1; // Set On Load or Update
 valueUpdatePercentual = -1; // same as above, but percentual
 
-
 depth = 0; //always above panels
 
+#endregion
 
-
-///INTERNAL VARS & SETUP COLISIONS
+#region INTERNAL VARS & SETUP COLISIONS
 
 orientation = "HORIZONTAL"; //HORIZONTAL or VERTICAL
 
@@ -53,3 +53,4 @@ buttonPressed = false;
 
 gui_setup_collision(origin);
 
+#endregion

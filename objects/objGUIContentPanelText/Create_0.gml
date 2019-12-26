@@ -1,6 +1,6 @@
 event_inherited();
-///CUSTOMIZEABLE VARIABLES
 
+#region CUSTOMIZEABLE VARIABLES
 text = "Displayed Text"; //displayed text
 width = 200;
 height = 50;
@@ -11,7 +11,9 @@ textOffset = 10;
 
 scrollWidth = 20;
 
-///INTERNAL VARS
+#endregion
+
+#region INTERNAL VARS
 arrText[0] = "";
 textIndex = 0;
 maxLines = 1;
@@ -20,3 +22,4 @@ fontHeight = 10;
 
 scrollBar = noone;
 
+#endregion

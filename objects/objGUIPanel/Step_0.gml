@@ -1,4 +1,4 @@
-/// @description MOUSE OVER & BLEND
+#region MOUSE OVER & BLEND
 mouseOver = point_in_rectangle(gui_mouse_x(), gui_mouse_y(), buttonLeft, buttonTop, buttonRight, buttonBottom);
 
 if(mouseOver){
@@ -7,9 +7,11 @@ if(mouseOver){
     image_blend = c_ltgray;
 }
 
+#endregion
 
-
-///COLLISION SETUP
+#region COLLISION SETUP
 
 gui_setup_collision(origin);
+
+#endregion
 

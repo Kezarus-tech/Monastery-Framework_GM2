@@ -1,5 +1,7 @@
 event_inherited();
-///DRAW ICON
+
+#region DRAW ICON
+
 if( icon != -1 ){
     if( buttonPressed ){
         draw_sprite_ext(icon, 0, buttonX, buttonY, 1, 1, 0, image_blend, image_alpha);
@@ -8,9 +10,10 @@ if( icon != -1 ){
     }
 }
 
+#endregion
 
 
-///DRAW TEXT
+#region DRAW TEXT
 if( text != "" ){
     draw_set_font_ext(fontType, fontColor, fontAlign, fa_middle, 1);
     
@@ -37,5 +40,4 @@ if( text != "" ){
     }
 }
 
-
-
+#endregion

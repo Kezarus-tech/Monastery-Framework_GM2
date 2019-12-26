@@ -1,5 +1,6 @@
 event_inherited();
-///CUSTOMIZEABLE VARIABLES
+
+#region CUSTOMIZEABLE VARIABLES
 
 width = 200;
 height = 50;
@@ -28,10 +29,10 @@ soundClick = sndClick;
 targetScript = noone;
 targetScriptArgs[0] = noone;
 
+#endregion
 
+#region INTERNAL VARS
 
-///INTERNAL VARS
 buttonPressed = false;
 
-
-
+#endregion

@@ -1,5 +1,6 @@
 event_inherited();
-///UNMARK GROUPS & MARK ME
+
+#region UNMARK GROUPS & MARK ME
 var myGroup = group;
 with(objGUIRadiobutton){
     if( myGroup == group ){
@@ -9,3 +10,4 @@ with(objGUIRadiobutton){
 
 buttonPressed = true;
 
+#endregion

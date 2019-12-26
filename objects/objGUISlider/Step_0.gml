@@ -1,5 +1,6 @@
 event_inherited();
-///CLICK AND DRAG DETECTION
+
+#region CLICK AND DRAG DETECTION
 
 var mouseOverSlider = false;
 with(slider){
@@ -20,8 +21,10 @@ if( mouse_check_button_released(mb_left) ){
     }
 }
 
+#endregion
 
-///VALUE - UPDATE
+
+#region VALUE - UPDATE
 if(!visible){
     //DO NOTHING
 }else
@@ -51,5 +54,5 @@ if( valueUpdatePercentual != -1 || valueUpdate != -1 ){
     event_perform(ev_other, ev_user1);
 }
 
-
+#endregion
 

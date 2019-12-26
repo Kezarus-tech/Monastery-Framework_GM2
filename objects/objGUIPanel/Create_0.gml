@@ -1,4 +1,6 @@
-/// @description CUSTOMIZEABLE VARIABLES
+/// @description VARIABLES
+
+#region CUSTOMIZEABLE VARIABLES
 
 width = 200;
 height = 50;
@@ -9,7 +11,9 @@ depth = 100; //always below the buttons
 
 origin = GUI_TOPLEFT; // GUI_TOPLEFT or GUI_CENTER
 
-///INTERNAL VARS & INITIALIZER
+#endregion
+
+#region INTERNAL VARS & INITIALIZER
 
 detectorPosSize = 0;
 image_blend = c_ltgray;
@@ -26,4 +30,4 @@ buttonBottom    = 0;
 ///INITIALIZER
 alarm[0] = 1;
 
-
+#endregion

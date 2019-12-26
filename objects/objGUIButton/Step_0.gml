@@ -1,5 +1,6 @@
 event_inherited();
-///HOVER AND CLICK
+
+#region HOVER AND CLICK
 
 if( enabled ){
     if( !mouseOver ){
@@ -34,7 +35,9 @@ if( enabled ){
     image_blend = c_gray;
 }
 
-///SPRITE
+#endregion
+
+#region SPRITE
 
 if(!buttonPressed){
     sprite_index = guiSprite;
@@ -42,5 +45,4 @@ if(!buttonPressed){
     sprite_index = guiSpritePressed;
 }
 
-
-
+#endregion

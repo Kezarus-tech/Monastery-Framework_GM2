@@ -10,7 +10,7 @@ if(textIndex <= string_length(text)){
         textToDisplay += string_copy(text, textIndex, 1);
 
         //PLAY SOUND
-        var snd = audio_play_sound(sound, 10, false);
+        audio_play_sound(sound, 10, false);
     }
 }
 

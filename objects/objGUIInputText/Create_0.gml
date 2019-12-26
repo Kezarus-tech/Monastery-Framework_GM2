@@ -1,5 +1,6 @@
 event_inherited();
-///CUSTOMIZEABLE VARIABLES
+
+#region CUSTOMIZEABLE VARIABLES
 text = "TEXT" // text displayed and to be edited
 textMaxCharacters = 1000; //limit the amout of characters
 width = 200;
@@ -17,8 +18,10 @@ textOffset = 10;
 
 selectionOffset = 10;
 
+#endregion
 
-///INTERNAL VARS
+
+#region INTERNAL VARS
 onFocus = false;
 
 cursorPosition = 1;
@@ -30,3 +33,4 @@ keyTimerLimit = 10;
 
 origin = GUI_TOPLEFT; // ALWAYS TOP LEFT
 
+#endregion

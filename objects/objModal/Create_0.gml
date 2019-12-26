@@ -1,13 +1,14 @@
 event_inherited();
-///CUSTOMIZEABLE VARIABLES
+
+#region CUSTOMIZEABLE VARIABLES
 fontType = fntStandard;
 fontColor = c_yellow;
 fontOffset = 20;
 
+#endregion
 
 
-
-///INTERNAL VARIABLES
+#region INTERNAL VARIABLES
 text = ""; 
 options = "";
 ev_type = -1;
@@ -17,9 +18,10 @@ modalAnswer = "";
 
 depth = -1000; //ALWAYS ON TOP OF EVERYTHING
 
+#endregion
 
 
-///SETUP SIZE & POSITION
+#region SETUP SIZE & POSITION
 var appWidth = surface_get_width(application_surface);
 var appHeight = surface_get_height(application_surface);
 
@@ -29,5 +31,5 @@ width = appWidth div 2;
 x = (appWidth div 2) - (width div 2)
 y = appHeight div 5;
 
-
+#endregion
 

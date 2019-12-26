@@ -1,6 +1,6 @@
 event_inherited();
-///MOUSE WHEEL UP DOWN
 
+#region MOUSE WHEEL UP DOWN
 if(mouseOver){
     if( mouse_wheel_down() ){
         linesNow += 1;
@@ -17,19 +17,20 @@ if(mouseOver){
         scrollBar.valueUpdate = linesNow;
     }
 }
+#endregion
 
 
-///UPDATE BY THE SCROLLBAR
+#region UPDATE BY THE SCROLLBAR
 if(instance_exists(scrollBar)){
     if( linesNow != scrollBar.valueFinal ){
         changed = true;
         linesNow = round(scrollBar.valueFinal);
     }
 }
+#endregion
 
 
-///IF CHANGED
-
+#region IF CHANGED
 if(changed){
     changed = false;
 
@@ -48,7 +49,7 @@ if(changed){
             instance_deactivate_object(inst);
         }
     }
-
 }
+#endregion
 
 

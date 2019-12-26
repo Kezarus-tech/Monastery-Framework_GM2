@@ -1,5 +1,5 @@
-/// @description DRAW SELF & ICON
 
+#region DRAW SELF & ICON
 draw_sprite_ext(sprite_index, 0, buttonX, buttonY, 1, 1, 0, image_blend, image_alpha);
 
 if( buttonPressed ){
@@ -8,10 +8,10 @@ if( buttonPressed ){
         buttonY + (sprite_height div 2) - (sprite_get_height(icon) div 2));
 }
 
+#endregion
 
 
-
-///DRAW TEXT
+#region DRAW TEXT
 if( text != "" ){
     draw_set_font_ext(fontType, fontColor, fa_left, fa_middle, 1);
 
@@ -20,5 +20,5 @@ if( text != "" ){
         buttonY + (sprite_height div 2), text, -1, 1000, c_black, fontScale );
 }
 
-
+#endregion
 

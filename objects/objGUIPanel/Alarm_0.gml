@@ -1,8 +1,8 @@
-/// @description --THIS WORKS AS A CONSTRUCTOR---
+/// @description CONSTRUCTOR
 
 //always pace as last on inherited objects
 
-///EASY GUI
+#region EASY GUI
 
 //Spot differences on scaling done on room editor and apply
 //as width and height
@@ -13,7 +13,12 @@ if( sprite_exists(sprite_index) ){
     }
 }
 
-///DO INITIALIZE
+#endregion
+
+#region DO INITIALIZE
+
 gui_setup_collision(origin);
 sprite_index = guiSprite;
+
+#endregion
 

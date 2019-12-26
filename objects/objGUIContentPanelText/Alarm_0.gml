@@ -1,5 +1,6 @@
 event_inherited();
-///DEFINE THE TEXT ARRAY
+
+#region DEFINE THE TEXT ARRAY
 
 draw_set_font(fontType);
 
@@ -40,13 +41,12 @@ for(var i=1; i<=string_length(text); i++){
         currStringIndex = string_length(currString);
     }
 }
+#endregion
 
-
-///CREATE SCROLLBAR
-
+#region CREATE SCROLLBAR
 scrollBar = gui_create_slider(
                 x+width-scrollWidth, y,
                 scrollWidth, height, scrollWidth-2, scrollWidth, 
                 0, array_length_1d(arrText)-maxLines);
 
-
+#endregion

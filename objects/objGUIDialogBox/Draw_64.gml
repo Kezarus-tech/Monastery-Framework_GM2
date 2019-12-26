@@ -1,5 +1,6 @@
 event_inherited();
-///DRAW TEXT
+
+#region DRAW TEXT
 if( text != "" ){
     draw_set_font_ext(fontType, fontColor, fa_left, fa_top, 1);
     
@@ -9,9 +10,9 @@ if( text != "" ){
     draw_text_outline( textX, textY, textToDisplay, -1, width-(textOffset*2), c_black, fontScale );
 }
 
+#endregion
 
-
-///DRAW ARROW
+#region DRAW ARROW
 if( waitForAnykey ){
     var arrow = sprGUIArrow;
     draw_sprite_ext(arrow, 0, 
@@ -21,4 +22,4 @@ if( waitForAnykey ){
         wave(0, 1, 1, 0)
     );
 }
-
+#endregion
