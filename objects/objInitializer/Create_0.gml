@@ -22,6 +22,7 @@ ini_close();
 #region CREATE ESSENTIAL OBJECTS
 
 instance_create(-1000, -1000, objMouseGui);
+instance_create(-1000, -1000, objParticleEngine);
 
 #endregion
 

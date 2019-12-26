@@ -1,24 +1,24 @@
 {
-    "id": "eee64f41-d2b4-4b19-a52e-9aae2104919b",
+    "id": "fff24966-e2dc-4aa8-9184-46b4d4e85839",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "objInitializer",
+    "name": "objParticleEngine",
     "eventList": [
         {
-            "id": "f5d812d4-15e2-4d58-bef7-0f76001a3cb8",
+            "id": "98f44b52-3a7f-4d99-9b2d-8b0d59fd23c9",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "eee64f41-d2b4-4b19-a52e-9aae2104919b"
+            "m_owner": "fff24966-e2dc-4aa8-9184-46b4d4e85839"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
-    "persistent": false,
+    "persistent": true,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
     "physicsFriction": 0.2,
@@ -28,10 +28,8 @@
     "physicsObject": false,
     "physicsRestitution": 0.1,
     "physicsSensor": false,
-    "physicsShape": 0,
-    "physicsShapePoints": [
-        
-    ],
+    "physicsShape": 1,
+    "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,

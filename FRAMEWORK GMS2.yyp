@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "1e0ca8c5-c847-41a7-8382-8cf8a04917d5",
+            "Value": {
+                "id": "758c1cc6-5752-44b4-9d77-d5e65ddb899d",
+                "resourcePath": "scripts\\particles_create_above\\particles_create_above.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "204e4e7c-acb1-417e-b080-fd56588dd36c",
             "Value": {
                 "id": "87bc25b5-1030-4115-8c86-a8d80cc6b1a7",
@@ -148,6 +156,14 @@
                 "id": "e1cbfc35-7f52-45a5-b124-eccfb0156529",
                 "resourcePath": "sounds\\sndTypewriter\\sndTypewriter.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "2590bbf6-3da5-4f7b-aeaa-f58029b309f6",
+            "Value": {
+                "id": "ecf3e5e3-0f35-4733-8a0b-d7c28fc68ea3",
+                "resourcePath": "scripts\\particles_create_below\\particles_create_below.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1141,6 +1157,14 @@
                 "resourcePath": "scripts\\teleport_to\\teleport_to.yy",
                 "resourceType": "GMScript"
             }
+        },
+        {
+            "Key": "fff24966-e2dc-4aa8-9184-46b4d4e85839",
+            "Value": {
+                "id": "4d2e9272-c9f7-4e70-9f64-3488ad84e9a0",
+                "resourcePath": "objects\\objParticleEngine\\objParticleEngine.yy",
+                "resourceType": "GMObject"
+            }
         }
     ],
     "script_order": [
@@ -1163,6 +1187,8 @@
         "3a0dc288-acec-464a-8e77-4fc406c8930e",
         "114cdc9f-cbcc-44c6-a1cd-93f9dd9e2e7a",
         "2ec47639-0f9f-4ba3-b097-7dc7c2097d6c",
+        "1e0ca8c5-c847-41a7-8382-8cf8a04917d5",
+        "2590bbf6-3da5-4f7b-aeaa-f58029b309f6",
         "0f55d093-c0f0-42b9-b550-c60095f0b4b3",
         "d4849ff0-a1da-4c4a-b78f-c79818069e43",
         "ff626d77-bc71-4852-9b22-fcc02bb570f1",
