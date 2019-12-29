@@ -2,6 +2,7 @@ event_inherited();
 
 #region CUSTOMIZEABLE VARIABLES
 text = "Text"; //displayed text
+textOnLeft = false; //place text on left
 icon = sprIconCross; //sprite index
 
 guiSprite = sprCheckButton;
@@ -13,11 +14,6 @@ textOffset = 5;
 #endregion
 
 #region INTERNAL VARS
-width = sprite_width;
-height = sprite_height;
-
-guiSpritePressed = guiSprite;
-
 toggled = true;
 
 origin = GUI_TOPLEFT; //always top left

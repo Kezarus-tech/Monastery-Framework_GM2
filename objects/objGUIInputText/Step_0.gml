@@ -33,7 +33,9 @@ if(!onFocus){
 
 #region ON FOCUS KEYBOARD PRESS
 if(onFocus){
-        
+	//SAFE GUARD, text is always string and not number
+	text = string(text);
+
     if( keyTimer <= 0 ){
         //Shift
         if( keyboard_check(vk_shift) ){
@@ -126,7 +128,7 @@ if(onFocus){
         var maxLength = width - (textOffset*2);
         
         draw_set_font(fontType);
-        if( string_width(string_hash_to_newline(text+wText)) <= maxLength &&
+        if( string_width(string_hash_to_newline(text+wText))*fontScale <= maxLength &&
             string_length(text+wText) <= textMaxCharacters
         ){
             text = string_insert(wText, text, cursorPosition);

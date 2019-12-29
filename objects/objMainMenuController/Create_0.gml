@@ -2,7 +2,6 @@ event_inherited();
 
 ///CREATE BUTTONS & PANEL
 var ww = surface_get_width(application_surface);
-var hh = surface_get_height(application_surface);
 
 var offset = 20;
 var btnWidth = 200;
@@ -10,12 +9,12 @@ var btnHeight = 40;
 var btnOffset = 5;
 
 width = (offset*2) + btnWidth;
-height = (offset*2) + btnHeight + ((btnHeight+btnOffset) * 6);
+height = (offset*2) + btnHeight + ((btnHeight+btnOffset) * 7);
 
 x = (ww div 2) //middle of the screen
     -(width div 2);
-y = (hh div 3) //a third of the screen
-    -(height div 2);
+
+y = 10;
 
 var wx = x + offset;
 var wy = y + offset;
@@ -39,6 +38,9 @@ gui_create_button(wx, wy, btnWidth, btnHeight, "Shake", func_room_goto, roomShak
 
 wy += btnHeight + btnOffset;
 gui_create_button(wx, wy, btnWidth, btnHeight, "Modals SO", func_room_goto, roomModalSO);
+
+wy += btnHeight + btnOffset;
+gui_create_button(wx, wy, btnWidth, btnHeight, "Particles Lab", func_room_goto, roomParticleLabs);
 
 wy += btnHeight + btnOffset;
 gui_create_button(wx, wy, btnWidth, btnHeight, "Quit", func_game_end);

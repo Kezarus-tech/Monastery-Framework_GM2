@@ -21,3 +21,4 @@ part_type_alpha2(partExample, 0.75, 0);
 part_type_life(partExample, 40, 60);
 part_type_blend(partExample, true);
 #endregion
+

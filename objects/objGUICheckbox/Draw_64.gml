@@ -13,11 +13,17 @@ if( buttonPressed ){
 
 #region DRAW TEXT
 if( text != "" ){
-    draw_set_font_ext(fontType, fontColor, fa_left, fa_middle, 1);
-
-    draw_text_outline( 
-        buttonX + sprite_width + textOffset, 
-        buttonY + (sprite_height div 2), text, -1, 1000, c_black, fontScale );
+	if(!textOnLeft){
+	    draw_set_font_ext(fontType, fontColor, fa_left, fa_middle, 1);
+	    draw_text_outline( 
+	        buttonX + sprite_width + textOffset, 
+	        buttonY + (sprite_height div 2), text, -1, 1000, c_black, fontScale );
+	}else{
+		draw_set_font_ext(fontType, fontColor, fa_right, fa_middle, 1);
+	    draw_text_outline( 
+	        buttonX - textOffset, 
+	        buttonY + (sprite_height div 2), text, -1, 1000, c_black, fontScale );
+	}
 }
 
 #endregion

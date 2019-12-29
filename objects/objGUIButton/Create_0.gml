@@ -6,6 +6,7 @@ width = 200;
 height = 50;
 text = "Button Text"; //displayed text
 icon = -1; //sprite index
+iconIndex = 0; //subimage of the sprite icon to be presented
 
 enabled = true;
 stayPressed = false;

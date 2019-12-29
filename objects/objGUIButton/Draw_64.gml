@@ -4,9 +4,9 @@ event_inherited();
 
 if( icon != -1 ){
     if( buttonPressed ){
-        draw_sprite_ext(icon, 0, buttonX, buttonY, 1, 1, 0, image_blend, image_alpha);
+        draw_sprite_ext(icon, iconIndex, buttonX, buttonY, 1, 1, 0, image_blend, image_alpha);
     }else{
-        draw_sprite_ext(icon, 0, buttonX, buttonY-pressedOffset, 1, 1, 0, image_blend, image_alpha);
+        draw_sprite_ext(icon, iconIndex, buttonX, buttonY-pressedOffset, 1, 1, 0, image_blend, image_alpha);
     }
 }
 
