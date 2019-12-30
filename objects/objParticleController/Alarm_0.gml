@@ -3,12 +3,31 @@
 alarm[0] = room_speed;
 
 #region EMMITER
-with(objCount){
-	other.varCount = numbers_only(text, 1);
-}
+with(objCount){ other.varCount = numbers_only(text, 1); }
+with(objStream){ other.varStream = buttonPressed; }
 
-with(objStream){
-	other.varStream = buttonPressed;
+with( objGUIRadiobutton ){
+	if( group == "SHAPE" && buttonPressed ){
+		if(text == "Rect"){
+			other.emitterShape = ps_shape_rectangle;
+		}else if(text == "Ellipse"){
+			other.emitterShape = ps_shape_ellipse;
+		}else if(text == "Diam."){
+			other.emitterShape = ps_shape_diamond;
+		}else if(text == "Line"){
+			other.emitterShape = ps_shape_line;
+		}
+	}
+	
+	if( group == "DISTRIB" && buttonPressed ){
+		if(text == "Linear"){
+			other.emitterDistrib = ps_distr_linear;
+		}else if(text == "Gauss"){
+			other.emitterDistrib = ps_distr_gaussian;
+		}else if(text == "IGauss"){
+			other.emitterDistrib = ps_distr_invgaussian;
+		}
+	}
 }
 #endregion
 
@@ -18,7 +37,11 @@ var localShape = part_index_to_type(0);
 for(var i=0; i<ds_list_size(lstObjShape); i++){
 	with(lstObjShape[| i]){
 		if(buttonPressed){
-			localShape = part_index_to_type(iconIndex);
+			if( i == 14 ){
+				localShape = -1;
+			}else{
+				localShape = part_index_to_type(iconIndex);
+			}
 		}
 	}
 }
@@ -32,18 +55,16 @@ with(objAlpha1){
 }
 
 with(objColor2){ other.varColor2 = myColor; }
-with(objAlpha2){ 
-	 other.varAlpha2 = numbers_only(text, 100) / 100;
-}
+with(objColor2Use){ other.varColor2Use = buttonPressed; }
+with(objAlpha2){ other.varAlpha2 = numbers_only(text, 100) / 100; }
+with(objAlpha2Use){ other.varAlpha2Use = buttonPressed; }
 
 with(objColor3){ other.varColor3 = myColor; }
-with(objAlpha3){
-	 other.varAlpha3 = numbers_only(text, 100) / 100;
-}
+with(objColor3Use){ other.varColor3Use = buttonPressed; }
+with(objAlpha3){ other.varAlpha3 = numbers_only(text, 100) / 100; }
+with(objAlpha3Use){ other.varAlpha3Use = buttonPressed; }
 
-with(objBlending){
-	other.varBlending = buttonPressed;
-}
+with(objBlending){ other.varBlending = buttonPressed; }
 #endregion
 
 #region SIZE
@@ -80,44 +101,74 @@ with(objOrientationWigg)	{ other.varOrientationWigg = numbers_only(text, 0); }
 with(objRelative)			{ other.varRelative = buttonPressed; }
 #endregion
 
+#region LIFE
+with(objLifeMin)		{ other.varLifeMin = numbers_only(text, 60); }
+with(objLifeMax)		{ other.varLifeMax = numbers_only(text, 80); }
+
+with(objSteps)			{ other.varSteps = numbers_only(text, 0); }
+with(objDeath)			{ other.varDeath = numbers_only(text, 0); }
+#endregion
+
+
+
+
 #region SETUP
-part_type_shape(partSample1, varShape);
+//EMITTER
+	
+part_emitter_region(partSysAbove, emitter, 
+	emmiterXMin, emmiterXMax, emmiterYMin, emmiterYMax,
+	emitterShape, emitterDistrib);
+
+
+//SHAPE
+if( varShape != -1 ){
+	part_type_shape(partCurrent, varShape);
+}else{
+	part_type_sprite(partCurrent, varShapeSprite, false, false, false);
+}
 
 //COLOR
-if( varColor1 == varColor2 ){
-	part_type_colour1(partSample1, varColor1);
-}else if( varColor2 == varColor3 ){
-	part_type_colour2(partSample1, varColor1, varColor2);
-}else{
-	part_type_colour3(partSample1, varColor1, varColor2, varColor3);
+if( !varColor2Use ){
+	part_type_colour1(partCurrent, varColor1);
+}else if( varColor2Use && !varColor3Use ){
+	part_type_colour2(partCurrent, varColor1, varColor2);
+}else if( varColor2Use && varColor3Use ){
+	part_type_colour3(partCurrent, varColor1, varColor2, varColor3);
 }
 
 //ALPHA
-if( varAlpha1 == varAlpha2 ){
-	part_type_alpha1(partSample1, varAlpha1);
-}else if( varAlpha2 == varAlpha3 ){
-	part_type_alpha2(partSample1, varAlpha1, varAlpha2);
-}else{
-	part_type_alpha3(partSample1, varAlpha1, varAlpha2, varAlpha3);
+if( !varAlpha2Use ){
+	part_type_alpha1(partCurrent, varAlpha1);
+}else if( varAlpha2Use && !varAlpha3Use ){
+	part_type_alpha2(partCurrent, varAlpha1, varAlpha2);
+}else if( varAlpha2Use && varAlpha3Use ){
+	part_type_alpha3(partCurrent, varAlpha1, varAlpha2, varAlpha3);
 }
 
 //BLENDING
-part_type_blend(partSample1, varBlending);
+part_type_blend(partCurrent, varBlending);
 
 //SIZE
-part_type_size(partSample1, varSizeMin, varSizeMax, varSizeIncr, varSizeWigg);
-part_type_scale(partSample1, varSizeScaleX, varSizeScaleY);
+part_type_size(partCurrent, varSizeMin, varSizeMax, varSizeIncr, varSizeWigg);
+part_type_scale(partCurrent, varSizeScaleX, varSizeScaleY);
 
 //SPEED
-part_type_speed(partSample1, varSpeedMin, varSpeedMax, varSpeedIncr, varSpeedWigg);
-part_type_gravity(partSample1, varGravQnt, varGravDir);
+part_type_speed(partCurrent, varSpeedMin, varSpeedMax, varSpeedIncr, varSpeedWigg);
+part_type_gravity(partCurrent, varGravQnt, varGravDir);
 
 //DIRECTION & ORIENTATION
-part_type_direction(partSample1, varDirectionMin, varDirectionMax, varDirectionIncr, varDirectionWigg);
-part_type_orientation(partSample1, varOrientationMin, varOrientationMax, varOrientationIncr, varOrientationWigg, varRelative);
+part_type_direction(partCurrent, varDirectionMin, varDirectionMax, varDirectionIncr, varDirectionWigg);
+part_type_orientation(partCurrent, varOrientationMin, varOrientationMax, varOrientationIncr, varOrientationWigg, varRelative);
 
+//LIFE
+part_type_life(partCurrent, varLifeMin, varLifeMax);
 
-//part_type_life(partSample1, 80, 80);
+//STEP
+part_type_step(partSampleOriginal, varSteps, partSampleStep);
+
+//DEATH
+part_type_death(partSampleOriginal, varDeath, partSampleDeath);
+
 
 
 #endregion

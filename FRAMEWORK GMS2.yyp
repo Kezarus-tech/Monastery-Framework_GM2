@@ -287,6 +287,14 @@
             }
         },
         {
+            "Key": "35bd88b5-1dac-4f05-b049-3303d675879f",
+            "Value": {
+                "id": "ec673c21-4812-45c3-83d1-a3929248003b",
+                "resourcePath": "scripts\\part_add_sprite\\part_add_sprite.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "36853eb5-e36e-44a2-b114-375def3691a2",
             "Value": {
                 "id": "d81c7532-f4b6-4987-9d44-3f42bcd8ca0b",
@@ -1327,6 +1335,7 @@
         "a2d2a49f-6ff7-4b3f-a859-f9ff043394c5",
         "046e8d6b-deae-40ae-b82e-89cf2e82720b",
         "e888e684-35fd-4938-9327-05e87c8b9f48",
+        "35bd88b5-1dac-4f05-b049-3303d675879f",
         "50a81268-7777-4032-a726-dee90ecaf333",
         "f2b566f6-9214-443a-a573-82c185118bef",
         "e79f124e-8dec-47f0-992b-1260f974fc96",
