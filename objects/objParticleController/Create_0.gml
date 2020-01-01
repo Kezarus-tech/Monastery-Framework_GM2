@@ -13,6 +13,7 @@ emmiterYMax = emmiterYMin+1;
 emitterAreaAlpha = 1;
 
 
+mapOriginal = ds_map_create();
 partSampleOriginal = part_type_create();
 part_type_shape(partSampleOriginal, pt_shape_sphere);
 part_type_size(partSampleOriginal, 1, 2, -0.01, 0);
@@ -26,9 +27,10 @@ part_type_alpha2(partSampleOriginal, 0.75, 0);
 part_type_life(partSampleOriginal, 80, 80);
 part_type_blend(partSampleOriginal, false);
 
+mapStep = ds_map_create();
 partSampleStep = part_type_create();
-part_type_shape(partSampleStep, pt_shape_pixel);
-part_type_size(partSampleStep, 1, 2, -0.01, 0);
+part_type_shape(partSampleStep, pt_shape_flare);
+part_type_size(partSampleStep, 0.5, 0.5, -0.01, 0);
 part_type_scale(partSampleStep, 1, 1);
 part_type_speed(partSampleStep, 1, 1.5, 0, 0);
 part_type_direction(partSampleStep, 0, 360, 0, 0);
@@ -39,6 +41,7 @@ part_type_alpha2(partSampleStep, 0.75, 0);
 part_type_life(partSampleStep, 80, 80);
 part_type_blend(partSampleStep, false);
 
+mapDeath = ds_map_create();
 partSampleDeath = part_type_create();
 part_type_shape(partSampleDeath, pt_shape_sphere);
 part_type_size(partSampleDeath, 1, 2, -0.01, 0);
@@ -54,7 +57,7 @@ part_type_blend(partSampleDeath, false);
 
 
 
-
+mapCurrent = mapOriginal;
 partCurrent = partSampleOriginal;
 
 objCount = noone;
@@ -64,86 +67,89 @@ objStream = noone;
 varStream = false;
 
 lstObjShape = ds_list_create();
-varShape = part_index_to_type(0);
-varShapeSprite = -1;
+mapCurrent[? "shape"] = part_index_to_type(0);
+varShapeSpriteCurrent = -1;
+varShapeSpriteOriginal = -1;
+varShapeSpriteStep = -1;
+varShapeSpriteDeath = -1;
 
 objColor1 = noone;
-varColor1 = c_white;
+mapCurrent[? "color1"] = c_white;
 objAlpha1 = noone;
-varAlpha1 = 1;
+mapCurrent[? "alpha1"] = 1;
 
 objColor2 = noone;
-varColor2 = c_white;
+mapCurrent[? "color2"] = c_white;
 objColor2Use = noone;
-varColor2Use = true;
+mapCurrent[? "color2use"] = true;
 objAlpha2 = noone;
-varAlpha2 = 1;
+mapCurrent[? "alpha2"] = 1;
 objAlpha2Use = noone;
-varAlpha2Use = true;
+mapCurrent[? "alpha2use"] = true;
 
 objColor3 = noone;
-varColor3 = c_white;
+mapCurrent[? "color3"] = c_white;
 objColor3Use = noone;
-varColor3Use = true;
+mapCurrent[? "color3use"] = true;
 objAlpha3 = noone;
-varAlpha3 = 1;
+mapCurrent[? "alpha3"] = 1;
 objAlpha3Use = noone;
-varAlpha3Use = true;
+mapCurrent[? "alpha3use"] = true;
 
 objBlending = noone;
-varBlending = false;
+mapCurrent[? "blending"] = false;
 
 objSizeMin = noone;
-varSizeMin = 1;
+mapCurrent[? "sizemin"] = 1;
 objSizeMax = noone;
-varSizeMax = 1;
+mapCurrent[? "sizemax"] = 1;
 objSizeScaleX = noone;
-varSizeScaleX = 1;
+mapCurrent[? "sizescalex"] = 1;
 objSizeScaleY = noone;
-varSizeScaleY = 1;
+mapCurrent[? "sizescaley"] = 1;
 objSizeIncr = noone;
-varSizeIncr = 0;
+mapCurrent[? "sizeincr"] = 0;
 objSizeWigg = noone;
-varSizeWigg = 0;
+mapCurrent[? "sizewigg"] = 0;
 
 objSpeedMin = noone;
-varSpeedMin = 0;
+mapCurrent[? "speedmin"] = 0;
 objSpeedMax = noone;
-varSpeedMax = 0;
+mapCurrent[? "speedmax"] = 0;
 objSpeedIncr = noone;
-varSpeedIncr = 0;
+mapCurrent[? "speedincr"] = 0;
 objSpeedWigg = noone;
-varSpeedWigg = 0;
+mapCurrent[? "speedwigg"] = 0;
 objGravQnt = noone;
-varGravQnt = 0;
+mapCurrent[? "gravqnt"] = 0;
 objGravDir = noone;
-varGravDir = 0;
+mapCurrent[? "gravdir"] = 0;
 
 objDirectionMin = noone;
-varDirectionMin = 0;
+mapCurrent[? "directionmin"] = 0;
 objDirectionMax = noone;
-varDirectionMax = 0;
+mapCurrent[? "directionmax"] = 0;
 objDirectionIncr = noone;
-varDirectionIncr = 0;
+mapCurrent[? "directionincr"] = 0;
 objDirectionWigg = noone;
-varDirectionWigg = 0;
+mapCurrent[? "directionwigg"] = 0;
 
 objOrientationMin = noone;
-varOrientationMin = 0;
+mapCurrent[? "orientationmin"] = 0;
 objOrientationMax = noone;
-varOrientationMax = 0;
+mapCurrent[? "orientationmax"] = 0;
 objOrientationIncr = noone;
-varOrientationIncr = 0;
+mapCurrent[? "orientationincr"] = 0;
 objOrientationWigg = noone;
-varOrientationWigg = 0;
+mapCurrent[? "orientationwigg"] = 0;
 
 objRelative = noone;
-varRelative = false;
+mapCurrent[? "relative"] = false;
 
 objLifeMin = noone;
-varLifeMin = 60;
+mapCurrent[? "lifemin"] = 60;
 objLifeMax = noone;
-varLifeMax = 80;
+mapCurrent[? "lifemax"] = 80;
 
 objSteps = noone;
 varSteps = 0;
@@ -151,6 +157,19 @@ objDeath = noone;
 varDeath = 0;
 
 
+#region ADD VARS TO MAP
+
+var size, key, i;
+size = ds_map_size(mapOriginal);
+key = ds_map_find_first(mapOriginal);
+for (i = 0; i < size; i++;){
+	mapStep[? key] = mapOriginal[? key];
+	mapDeath[? key] = mapOriginal[? key];
+	
+	key = ds_map_find_next(mapOriginal, key);
+}
+
+#endregion
 
 
 

@@ -444,11 +444,13 @@ controller.objDeath = inst;
 wy += guiHeight + 30;
 gui_create_label( "EDIT PARTICLES", titlesX, wy, -1, c_yellow, fa_center, guiFontScale );
 
-wy += 25;
+wy += 20;
 wx = x + 18;
 var btnEditWidth = 80;
 
 inst = gui_create_button(wx, wy, btnEditWidth, guiHeight, "Original");
+inst.targetScript = click_edit_particle;
+inst.targetScriptArgs[0] = "Original";
 inst.guiSprite = sprSliderBar;
 inst.guiSpritePressed = sprPartBtnPressed;
 inst.stayPressed = true;
@@ -459,6 +461,8 @@ inst.fontScale = guiFontScale;
 	
 wx += btnEditWidth + 10;
 inst = gui_create_button(wx, wy, btnEditWidth, guiHeight, "Steps");
+inst.targetScript = click_edit_particle;
+inst.targetScriptArgs[0] = "Steps";
 inst.guiSprite = sprSliderBar;
 inst.guiSpritePressed = sprPartBtnPressed;
 inst.stayPressed = true;
@@ -468,10 +472,36 @@ inst.fontScale = guiFontScale;
 
 wx += btnEditWidth + 10;
 inst = gui_create_button(wx, wy, btnEditWidth, guiHeight, "Death");
+inst.targetScript = click_edit_particle;
+inst.targetScriptArgs[0] = "Death";
 inst.guiSprite = sprSliderBar;
 inst.guiSpritePressed = sprPartBtnPressed;
 inst.stayPressed = true;
 inst.toggled = false;
+inst.pressedOffset = 0;
+inst.fontScale = guiFontScale;
+#endregion
+
+#region FILE
+wy += guiHeight + 10;
+gui_create_label( "FILE", titlesX, wy, -1, c_yellow, fa_center, guiFontScale );
+
+wy += 20;
+wx = x + 64;
+
+inst = gui_create_button(wx, wy, btnEditWidth, guiHeight, "Export");
+inst.targetScript = click_part_export;
+inst.guiSprite = sprSliderBar;
+inst.guiSpritePressed = sprPartBtnPressed;
+inst.pressedOffset = 0;
+inst.fontScale = guiFontScale;
+
+wx += btnEditWidth + 10;
+inst = gui_create_button(wx, wy, btnEditWidth, guiHeight, "Import");
+//inst.targetScript = click_edit_particle;
+//inst.targetScriptArgs[0] = "Original";
+inst.guiSprite = sprSliderBar;
+inst.guiSpritePressed = sprPartBtnPressed;
 inst.pressedOffset = 0;
 inst.fontScale = guiFontScale;
 

@@ -37,7 +37,7 @@ var localShape = part_index_to_type(0);
 for(var i=0; i<ds_list_size(lstObjShape); i++){
 	with(lstObjShape[| i]){
 		if(buttonPressed){
-			if( i == 14 ){
+			if( iconIndex == 14 ){
 				localShape = -1;
 			}else{
 				localShape = part_index_to_type(iconIndex);
@@ -45,69 +45,68 @@ for(var i=0; i<ds_list_size(lstObjShape); i++){
 		}
 	}
 }
-varShape = localShape;
+mapCurrent[? "shape"] = localShape;
 #endregion
 
 #region COLOR & ALPHA
-with(objColor1){ other.varColor1 = myColor; }
-with(objAlpha1){ 
-	 other.varAlpha1 = numbers_only(text, 100) / 100;
-}
+with(objColor1){ other.mapCurrent[? "color1"] = myColor; }
+with(objAlpha1){ other.mapCurrent[? "alpha1"]  = numbers_only(text, 100) / 100; }
 
-with(objColor2){ other.varColor2 = myColor; }
-with(objColor2Use){ other.varColor2Use = buttonPressed; }
-with(objAlpha2){ other.varAlpha2 = numbers_only(text, 100) / 100; }
-with(objAlpha2Use){ other.varAlpha2Use = buttonPressed; }
+with(objColor2){ other.mapCurrent[? "color2"] = myColor; }
+with(objColor2Use){ other.mapCurrent[? "color2use"] = buttonPressed; }
+with(objAlpha2){ other.mapCurrent[? "alpha2"] = numbers_only(text, 100) / 100; }
+with(objAlpha2Use){ other.mapCurrent[? "alpha2use"] = buttonPressed; }
 
-with(objColor3){ other.varColor3 = myColor; }
-with(objColor3Use){ other.varColor3Use = buttonPressed; }
-with(objAlpha3){ other.varAlpha3 = numbers_only(text, 100) / 100; }
-with(objAlpha3Use){ other.varAlpha3Use = buttonPressed; }
+with(objColor3){ other.mapCurrent[? "color3"] = myColor; }
+with(objColor3Use){ other.mapCurrent[? "color3use"] = buttonPressed; }
+with(objAlpha3){ other.mapCurrent[? "alpha3"] = numbers_only(text, 100) / 100; }
+with(objAlpha3Use){ other.mapCurrent[? "alpha3use"] = buttonPressed; }
 
-with(objBlending){ other.varBlending = buttonPressed; }
+with(objBlending){ other.mapCurrent[? "blending"] = buttonPressed; }
 #endregion
 
 #region SIZE
-with(objSizeMin)	{ other.varSizeMin = numbers_only(text, 1); }
-with(objSizeMax)	{ other.varSizeMax = numbers_only(text, 1); }
-with(objSizeScaleX)	{ other.varSizeScaleX = numbers_only(text, 1); }
-with(objSizeScaleY)	{ other.varSizeScaleY = numbers_only(text, 1); }
-with(objSizeIncr)	{ other.varSizeIncr = numbers_only(text, 0); }
-with(objSizeWigg)	{ other.varSizeWigg = numbers_only(text, 0); }
+with(objSizeMin)	{ other.mapCurrent[? "sizemin"] = numbers_only(text, 1); }
+with(objSizeMax)	{ other.mapCurrent[? "sizemax"] = numbers_only(text, 1); }
+with(objSizeScaleX)	{ other.mapCurrent[? "sizescalex"] = numbers_only(text, 1); }
+with(objSizeScaleY)	{ other.mapCurrent[? "sizescaley"] = numbers_only(text, 1); }
+with(objSizeIncr)	{ other.mapCurrent[? "sizeincr"] = numbers_only(text, 0); }
+with(objSizeWigg)	{ other.mapCurrent[? "sizewigg"] = numbers_only(text, 0); }
 #endregion
 
 
 #region SPEED
-with(objSpeedMin)	{ other.varSpeedMin = numbers_only(text, 1); }
-with(objSpeedMax)	{ other.varSpeedMax = numbers_only(text, 1); }
-with(objSpeedIncr)	{ other.varSpeedIncr = numbers_only(text, 0); }
-with(objSpeedWigg)	{ other.varSpeedWigg = numbers_only(text, 0); }
-with(objGravQnt)	{ other.varGravQnt = numbers_only(text, 0); }
-with(objGravDir)	{ other.varGravDir = numbers_only(text, 0); }
+with(objSpeedMin)	{ other.mapCurrent[? "speedmin"] = numbers_only(text, 1); }
+with(objSpeedMax)	{ other.mapCurrent[? "speedmax"] = numbers_only(text, 1); }
+with(objSpeedIncr)	{ other.mapCurrent[? "speedincr"] = numbers_only(text, 0); }
+with(objSpeedWigg)	{ other.mapCurrent[? "speedwigg"] = numbers_only(text, 0); }
+with(objGravQnt)	{ other.mapCurrent[? "gravqnt"] = numbers_only(text, 0); }
+with(objGravDir)	{ other.mapCurrent[? "gravdir"] = numbers_only(text, 0); }
 #endregion
 
 
 #region DIRECTION & ORIENTATION
-with(objDirectionMin)		{ other.varDirectionMin = numbers_only(text, 0); }
-with(objDirectionMax)		{ other.varDirectionMax = numbers_only(text, 360); }
-with(objDirectionIncr)		{ other.varDirectionIncr = numbers_only(text, 0); }
-with(objDirectionWigg)		{ other.varDirectionWigg = numbers_only(text, 0); }
+with(objDirectionMin)		{ other.mapCurrent[? "directionmin"] = numbers_only(text, 0); }
+with(objDirectionMax)		{ other.mapCurrent[? "directionmax"] = numbers_only(text, 360); }
+with(objDirectionIncr)		{ other.mapCurrent[? "directionincr"] = numbers_only(text, 0); }
+with(objDirectionWigg)		{ other.mapCurrent[? "directionwigg"] = numbers_only(text, 0); }
 
-with(objOrientationMin)		{ other.varOrientationMin = numbers_only(text, 0); }
-with(objOrientationMax)		{ other.varOrientationMax = numbers_only(text, 360); }
-with(objOrientationIncr)	{ other.varOrientationIncr = numbers_only(text, 0); }
-with(objOrientationWigg)	{ other.varOrientationWigg = numbers_only(text, 0); }
+with(objOrientationMin)		{ other.mapCurrent[? "orientationmin"] = numbers_only(text, 0); }
+with(objOrientationMax)		{ other.mapCurrent[? "orientationmax"] = numbers_only(text, 360); }
+with(objOrientationIncr)	{ other.mapCurrent[? "orientationincr"] = numbers_only(text, 0); }
+with(objOrientationWigg)	{ other.mapCurrent[? "orientationwigg"] = numbers_only(text, 0); }
 
-with(objRelative)			{ other.varRelative = buttonPressed; }
+with(objRelative)			{ other.mapCurrent[? "relative"] = buttonPressed; }
 #endregion
 
 #region LIFE
-with(objLifeMin)		{ other.varLifeMin = numbers_only(text, 60); }
-with(objLifeMax)		{ other.varLifeMax = numbers_only(text, 80); }
+with(objLifeMin)		{ other.mapCurrent[? "lifemin"] = numbers_only(text, 60); }
+with(objLifeMax)		{ other.mapCurrent[? "lifemax"] = numbers_only(text, 80); }
 
 with(objSteps)			{ other.varSteps = numbers_only(text, 0); }
 with(objDeath)			{ other.varDeath = numbers_only(text, 0); }
 #endregion
+
 
 
 
@@ -121,47 +120,48 @@ part_emitter_region(partSysAbove, emitter,
 
 
 //SHAPE
-if( varShape != -1 ){
-	part_type_shape(partCurrent, varShape);
+if( mapCurrent[? "shape"] != -1 ){
+	part_type_shape(partCurrent, mapCurrent[? "shape"]);
 }else{
-	part_type_sprite(partCurrent, varShapeSprite, false, false, false);
+	part_type_sprite(partCurrent, varShapeSpriteCurrent, false, false, false);
 }
 
 //COLOR
-if( !varColor2Use ){
-	part_type_colour1(partCurrent, varColor1);
-}else if( varColor2Use && !varColor3Use ){
-	part_type_colour2(partCurrent, varColor1, varColor2);
-}else if( varColor2Use && varColor3Use ){
-	part_type_colour3(partCurrent, varColor1, varColor2, varColor3);
+if( !mapCurrent[? "color2use"] ){
+	part_type_colour1(partCurrent, mapCurrent[? "color1"] );
+}else if( mapCurrent[? "color2use"] && !mapCurrent[? "color3use"] ){
+	part_type_colour2(partCurrent, mapCurrent[? "color1"] , mapCurrent[? "color2"] );
+}else if( mapCurrent[? "color2use"] && mapCurrent[? "color3use"] ){
+	part_type_colour3(partCurrent, mapCurrent[? "color1"] , mapCurrent[? "color2"], mapCurrent[? "color3"]);
 }
 
 //ALPHA
-if( !varAlpha2Use ){
-	part_type_alpha1(partCurrent, varAlpha1);
-}else if( varAlpha2Use && !varAlpha3Use ){
-	part_type_alpha2(partCurrent, varAlpha1, varAlpha2);
-}else if( varAlpha2Use && varAlpha3Use ){
-	part_type_alpha3(partCurrent, varAlpha1, varAlpha2, varAlpha3);
+if( !mapCurrent[? "alpha2use"] ){
+	part_type_alpha1(partCurrent, mapCurrent[? "alpha1"]);
+}else if( mapCurrent[? "alpha2use"] && !mapCurrent[? "alpha3use"] ){
+	part_type_alpha2(partCurrent, mapCurrent[? "alpha1"], mapCurrent[? "alpha2"]);
+}else if( mapCurrent[? "alpha2use"] && mapCurrent[? "alpha3use"] ){
+	part_type_alpha3(partCurrent, mapCurrent[? "alpha1"], mapCurrent[? "alpha2"], mapCurrent[? "alpha3"]);
 }
 
 //BLENDING
-part_type_blend(partCurrent, varBlending);
+part_type_blend(partCurrent, mapCurrent[? "blending"]);
 
 //SIZE
-part_type_size(partCurrent, varSizeMin, varSizeMax, varSizeIncr, varSizeWigg);
-part_type_scale(partCurrent, varSizeScaleX, varSizeScaleY);
+part_type_size(partCurrent, mapCurrent[? "sizemin"], mapCurrent[? "sizemax"], mapCurrent[? "sizeincr"], mapCurrent[? "sizewigg"]);
+part_type_scale(partCurrent, mapCurrent[? "sizescalex"], mapCurrent[? "sizescaley"]);
 
 //SPEED
-part_type_speed(partCurrent, varSpeedMin, varSpeedMax, varSpeedIncr, varSpeedWigg);
-part_type_gravity(partCurrent, varGravQnt, varGravDir);
+part_type_speed(partCurrent, mapCurrent[? "speedmin"], mapCurrent[? "speedmax"], mapCurrent[? "speedincr"], mapCurrent[? "speedwigg"]);
+part_type_gravity(partCurrent, mapCurrent[? "gravqnt"], mapCurrent[? "gravdir"]);
+
 
 //DIRECTION & ORIENTATION
-part_type_direction(partCurrent, varDirectionMin, varDirectionMax, varDirectionIncr, varDirectionWigg);
-part_type_orientation(partCurrent, varOrientationMin, varOrientationMax, varOrientationIncr, varOrientationWigg, varRelative);
+part_type_direction(partCurrent, mapCurrent[? "directionmin"], mapCurrent[? "directionmax"], mapCurrent[? "directionincr"], mapCurrent[? "directionwigg"]);
+part_type_orientation(partCurrent, mapCurrent[? "orientationmin"], mapCurrent[? "orientationmax"], mapCurrent[? "orientationincr"], mapCurrent[? "orientationwigg"], mapCurrent[? "relative"]);
 
 //LIFE
-part_type_life(partCurrent, varLifeMin, varLifeMax);
+part_type_life(partCurrent, mapCurrent[? "lifemin"], mapCurrent[? "lifemax"]);
 
 //STEP
 part_type_step(partSampleOriginal, varSteps, partSampleStep);
@@ -169,6 +169,6 @@ part_type_step(partSampleOriginal, varSteps, partSampleStep);
 //DEATH
 part_type_death(partSampleOriginal, varDeath, partSampleDeath);
 
-
-
 #endregion
+
+
