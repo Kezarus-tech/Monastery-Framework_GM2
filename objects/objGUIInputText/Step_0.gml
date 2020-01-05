@@ -1,5 +1,11 @@
 event_inherited();
 
+#region SAFE GUARD, text is always a string and not number
+if(!is_string(text)){
+	text = to_string(text);
+}
+#endregion
+
 #region HOVER & FOCUS & BLUR
 if( enabled ){
 
@@ -33,9 +39,6 @@ if(!onFocus){
 
 #region ON FOCUS KEYBOARD PRESS
 if(onFocus){
-	//SAFE GUARD, text is always string and not number
-	text = string(text);
-
     if( keyTimer <= 0 ){
         //Shift
         if( keyboard_check(vk_shift) ){

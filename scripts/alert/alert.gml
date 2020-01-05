@@ -7,7 +7,7 @@
 var wText = argument[0];
 
 if( argument_count > 1 ){
-    wText += ": " + string(argument[1]);
+    wText += ": " + to_string(argument[1]);
 }
 
 show_debug_message(wText);
