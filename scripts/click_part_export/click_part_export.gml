@@ -34,5 +34,10 @@ with(objParticleController){
 	}
 	
 	
-	alert(finalText);
+	var fileName = get_save_filename("Text Files (*.txt)|*.txt", "Untitled.txt");
+	if (fileName != ""){
+		var file = file_text_open_write(fileName);
+		file_text_write_string(file, finalText);
+		file_text_close(file);
+	}
 }
