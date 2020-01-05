@@ -23,6 +23,9 @@ inst.y = y - (inst.sprite_height div 3);
 statsText = "";
 alarm[1] = 1;
 
+lstTabs = ds_list_create();
+indexTabs = 0;
+
 #endregion
 
 #region EMMITER
@@ -40,6 +43,7 @@ inst.height = guiHeight;
 inst.text = 1;
 inst.label = "Count: ";
 controller.objCount = inst;
+ds_list_add(lstTabs, inst);
 
 wx += 50 + 70;
 inst = instance_create(wx, wy, objGUICheckbox);
@@ -151,6 +155,7 @@ inst.width = alphaWidth;
 inst.height = guiHeight;
 inst.text = "100";
 controller.objAlpha1 = inst;
+ds_list_add(lstTabs, inst);
 
 //COLOR & ALPHA 2
 wx += alphaWidth + alphaOffset + 8;
@@ -171,6 +176,7 @@ inst.width = alphaWidth;
 inst.height = guiHeight;
 inst.text = "100";
 controller.objAlpha2 = inst;
+ds_list_add(lstTabs, inst);
 
 wx += alphaWidth-1;
 inst = instance_create(wx, wy, objGUICheckbox);
@@ -197,6 +203,7 @@ inst.width = alphaWidth;
 inst.height = guiHeight;
 inst.text = "100";
 controller.objAlpha3 = inst;
+ds_list_add(lstTabs, inst);
 
 wx += alphaWidth-1;
 inst = instance_create(wx, wy, objGUICheckbox);
@@ -227,6 +234,7 @@ inst.height = guiHeight;
 inst.text = 1;
 inst.label = "Min: ";
 controller.objSizeMin = inst;
+ds_list_add(lstTabs, inst);
 wy += guiHeight;
 inst = instance_create(wx, wy, objGUIInputText);
 inst.width = sizeBtnWidth;
@@ -234,6 +242,7 @@ inst.height = guiHeight;
 inst.text = 1;
 inst.label = "Max: ";
 controller.objSizeMax = inst;
+ds_list_add(lstTabs, inst);
 
 wx += 106;
 wy = wyOld;
@@ -243,6 +252,7 @@ inst.height = guiHeight;
 inst.text = 1;
 inst.label = "ScaleX: ";
 controller.objSizeScaleX = inst;
+ds_list_add(lstTabs, inst);
 wy += guiHeight;
 inst = instance_create(wx, wy, objGUIInputText);
 inst.width = sizeBtnWidth;
@@ -250,6 +260,7 @@ inst.height = guiHeight;
 inst.text = 1;
 inst.label = "ScaleY: ";
 controller.objSizeScaleY = inst;
+ds_list_add(lstTabs, inst);
 
 wx += 89;
 wy = wyOld;
@@ -259,6 +270,7 @@ inst.height = guiHeight;
 inst.text = 0;
 inst.label = "Incr: ";
 controller.objSizeIncr = inst;
+ds_list_add(lstTabs, inst);
 wy += guiHeight;
 inst = instance_create(wx, wy, objGUIInputText);
 inst.width = sizeBtnWidth;
@@ -266,6 +278,7 @@ inst.height = guiHeight;
 inst.text = 0;
 inst.label = "Wigg: ";
 controller.objSizeWigg = inst;
+ds_list_add(lstTabs, inst);
 
 #endregion
 
@@ -285,6 +298,7 @@ inst.height = guiHeight;
 inst.text = 1;
 inst.label = "Min: ";
 controller.objSpeedMin = inst;
+ds_list_add(lstTabs, inst);
 wy += guiHeight;
 inst = instance_create(wx, wy, objGUIInputText);
 inst.width = sizeBtnWidth;
@@ -292,6 +306,7 @@ inst.height = guiHeight;
 inst.text = 1;
 inst.label = "Max: ";
 controller.objSpeedMax = inst;
+ds_list_add(lstTabs, inst);
 
 wx += 106;
 wy = wyOld;
@@ -303,6 +318,7 @@ inst.height = guiHeight;
 inst.text = 0;
 inst.label = "Quant: ";
 controller.objGravQnt = inst;
+ds_list_add(lstTabs, inst);
 wy += guiHeight;
 inst = instance_create(wx, wy, objGUIInputText);
 inst.width = sizeBtnWidth;
@@ -310,6 +326,7 @@ inst.height = guiHeight;
 inst.text = 0;
 inst.label = "Direc: ";
 controller.objGravDir = inst;
+ds_list_add(lstTabs, inst);
 
 wx += 89;
 wy = wyOld;
@@ -320,6 +337,7 @@ inst.height = guiHeight;
 inst.text = 0;
 inst.label = "Incr: ";
 controller.objSpeedIncr = inst;
+ds_list_add(lstTabs, inst);
 wy += guiHeight;
 inst = instance_create(wx, wy, objGUIInputText);
 inst.width = sizeBtnWidth;
@@ -327,6 +345,7 @@ inst.height = guiHeight;
 inst.text = 0;
 inst.label = "Wigg: ";
 controller.objSpeedWigg = inst;
+ds_list_add(lstTabs, inst);
 
 #endregion
 
@@ -346,6 +365,7 @@ inst.height = guiHeight;
 inst.text = 0;
 inst.label = "Min: ";
 controller.objDirectionMin = inst;
+ds_list_add(lstTabs, inst);
 wy += guiHeight;
 inst = instance_create(wx, wy, objGUIInputText);
 inst.width = sizeBtnWidth;
@@ -353,6 +373,7 @@ inst.height = guiHeight;
 inst.text = 360;
 inst.label = "Max: ";
 controller.objDirectionMax = inst;
+ds_list_add(lstTabs, inst);
 wy += guiHeight;
 inst = instance_create(wx, wy, objGUIInputText);
 inst.width = sizeBtnWidth;
@@ -360,6 +381,7 @@ inst.height = guiHeight;
 inst.text = 0;
 inst.label = "Incr: ";
 controller.objDirectionIncr = inst;
+ds_list_add(lstTabs, inst);
 wy += guiHeight;
 inst = instance_create(wx, wy, objGUIInputText);
 inst.width = sizeBtnWidth;
@@ -367,6 +389,7 @@ inst.height = guiHeight;
 inst.text = 0;
 inst.label = "Wigg: ";
 controller.objDirectionWigg = inst;
+ds_list_add(lstTabs, inst);
 
 wx += 96;
 wy = wyOld;
@@ -378,6 +401,7 @@ inst.height = guiHeight;
 inst.text = 0;
 inst.label = "Min: ";
 controller.objOrientationMin = inst;
+ds_list_add(lstTabs, inst);
 wy += guiHeight;
 inst = instance_create(wx, wy, objGUIInputText);
 inst.width = sizeBtnWidth;
@@ -385,6 +409,7 @@ inst.height = guiHeight;
 inst.text = 360;
 inst.label = "Max: ";
 controller.objOrientationMax = inst;
+ds_list_add(lstTabs, inst);
 wy += guiHeight;
 inst = instance_create(wx, wy, objGUIInputText);
 inst.width = sizeBtnWidth;
@@ -392,6 +417,7 @@ inst.height = guiHeight;
 inst.text = 0;
 inst.label = "Incr: ";
 controller.objOrientationIncr = inst;
+ds_list_add(lstTabs, inst);
 wy += guiHeight;
 inst = instance_create(wx, wy, objGUIInputText);
 inst.width = sizeBtnWidth;
@@ -399,6 +425,7 @@ inst.height = guiHeight;
 inst.text = 0;
 inst.label = "Wigg: ";
 controller.objOrientationWigg = inst;
+ds_list_add(lstTabs, inst);
 
 wy += guiHeight;
 inst = instance_create(wx, wy, objGUICheckbox);
@@ -415,6 +442,7 @@ inst.height = guiHeight;
 inst.text = 60;
 inst.label = "Min: ";
 controller.objLifeMin = inst;
+ds_list_add(lstTabs, inst);
 wy += guiHeight;
 inst = instance_create(wx, wy, objGUIInputText);
 inst.width = sizeBtnWidth;
@@ -422,6 +450,7 @@ inst.height = guiHeight;
 inst.text = 80;
 inst.label = "Max: ";
 controller.objLifeMax = inst;
+ds_list_add(lstTabs, inst);
 
 wy += guiHeight;
 inst = instance_create(wx, wy, objGUIInputText);
@@ -430,6 +459,7 @@ inst.height = guiHeight;
 inst.text = 0;
 inst.label = "Steps: ";
 controller.objSteps = inst;
+ds_list_add(lstTabs, inst);
 wy += guiHeight;
 inst = instance_create(wx, wy, objGUIInputText);
 inst.width = sizeBtnWidth;
@@ -437,6 +467,7 @@ inst.height = guiHeight;
 inst.text = 0;
 inst.label = "Death: ";
 controller.objDeath = inst;
+ds_list_add(lstTabs, inst);
 
 #endregion
 
