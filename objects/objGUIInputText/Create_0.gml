@@ -20,6 +20,8 @@ textOffset = 10;
 
 selectionOffset = 10;
 
+selectAllOnClick = false;
+
 #endregion
 
 

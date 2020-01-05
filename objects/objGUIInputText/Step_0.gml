@@ -12,6 +12,10 @@ if( enabled ){
     if( mouse_check_button_released(mb_left) ){
         if( mouseOver ){
             onFocus = true;
+			if(selectAllOnClick){
+				cursorPosition = string_length(text)+1;
+				cursorSelectPosition = 1;
+			}
         }else{
             if(onFocus){
                 onFocus = false;

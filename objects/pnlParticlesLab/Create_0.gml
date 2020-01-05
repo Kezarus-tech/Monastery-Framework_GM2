@@ -514,6 +514,7 @@ with(objGUIInputText){
 	guiSpriteFocus = sprSliderBar;
 	selectionOffset = 2;
 	textOffset = 2;
+	selectAllOnClick = true;
 }
 
 with(objGUICheckbox){
