@@ -1,4 +1,4 @@
-///part_emmiter_shape_string( ps_shape )
+///part_emmiter_shape_to_string( ps_shape )
 
 switch(argument0){
 	case ps_shape_rectangle: return "ps_shape_rectangle"; break;

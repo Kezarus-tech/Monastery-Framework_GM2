@@ -1,4 +1,4 @@
-///part_emmiter_distrib_string( ps_distr )
+///part_emmiter_distrib_to_string( ps_distr )
 
 switch(argument0){
 	case ps_distr_linear: return "ps_distr_linear"; break;

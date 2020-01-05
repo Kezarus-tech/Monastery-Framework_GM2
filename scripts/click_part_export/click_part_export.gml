@@ -7,7 +7,7 @@ with(objParticleController){
 	finalText += "part_emitter_region(partSysAbove, emitter, " +
 				string(emmiterXMin) + ", " + string(emmiterXMax) + ", " + 
 				string(emmiterYMin) + ", " + string(emmiterYMax) + ", " +
-				part_emmiter_shape_string(emitterShape) + ", " + part_emmiter_distrib_string(emitterDistrib) + ");";
+				part_emmiter_shape_to_string(emitterShape) + ", " + part_emmiter_distrib_to_string(emitterDistrib) + ");";
 	finalText += "\n\n";
 
 	finalText += "//PARTICLE\n";

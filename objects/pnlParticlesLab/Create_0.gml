@@ -529,8 +529,7 @@ inst.fontScale = guiFontScale;
 
 wx += btnEditWidth + 10;
 inst = gui_create_button(wx, wy, btnEditWidth, guiHeight, "Import");
-//inst.targetScript = click_edit_particle;
-//inst.targetScriptArgs[0] = "Original";
+inst.targetScript = click_part_import;
 inst.guiSprite = sprSliderBar;
 inst.guiSpritePressed = sprPartBtnPressed;
 inst.pressedOffset = 0;

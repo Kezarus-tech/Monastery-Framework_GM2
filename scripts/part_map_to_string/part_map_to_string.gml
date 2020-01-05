@@ -22,21 +22,21 @@ with(objParticleController){
 
 	//COLOR
 	if( !mapLocal[? "color2use"] ){
-		finalText += "part_type_colour1(" + partName + ", " + string(mapLocal[? "color1"]) + ");";
+		finalText += "part_type_colour1(" + partName + ", " + to_string(mapLocal[? "color1"]) + ");";
 	}else if( mapLocal[? "color2use"] && !mapLocal[? "color3use"] ){
-		finalText += "part_type_colour2(" + partName + ", " + string(mapLocal[? "color1"]) + ", " + string(mapLocal[? "color2"]) + ");";
+		finalText += "part_type_colour2(" + partName + ", " + to_string(mapLocal[? "color1"]) + ", " + to_string(mapLocal[? "color2"]) + ");";
 	}else if( mapLocal[? "color2use"] && mapLocal[? "color3use"] ){
-		finalText += "part_type_colour3(" + partName + ", " + string(mapLocal[? "color1"]) + ", " + string(mapLocal[? "color2"]) + ", " + string(mapLocal[? "color3"]) + ");";
+		finalText += "part_type_colour3(" + partName + ", " + to_string(mapLocal[? "color1"]) + ", " + to_string(mapLocal[? "color2"]) + ", " + to_string(mapLocal[? "color3"]) + ");";
 	}
 	finalText += "\n";
 
 	//ALPHA
 	if( !mapLocal[? "alpha2use"] ){
-		finalText += "part_type_alpha1(" + partName + ", " + string(mapLocal[? "alpha1"]) + ");";
+		finalText += "part_type_alpha1(" + partName + ", " + to_string(mapLocal[? "alpha1"]) + ");";
 	}else if( mapLocal[? "alpha2use"] && !mapLocal[? "alpha3use"] ){
-		finalText += "part_type_alpha2(" + partName + ", " + string(mapLocal[? "alpha1"]) + ", " + string(mapLocal[? "alpha2"]) + ");";
+		finalText += "part_type_alpha2(" + partName + ", " + to_string(mapLocal[? "alpha1"]) + ", " + to_string(mapLocal[? "alpha2"]) + ");";
 	}else if( mapLocal[? "alpha2use"] && mapLocal[? "alpha3use"] ){
-		finalText += "part_type_alpha3(" + partName + ",  " + string(mapLocal[? "alpha1"]) + ", " + string(mapLocal[? "alpha2"]) + ", " + string(mapLocal[? "alpha3"]) + ");";
+		finalText += "part_type_alpha3(" + partName + ",  " + to_string(mapLocal[? "alpha1"]) + ", " + to_string(mapLocal[? "alpha2"]) + ", " + to_string(mapLocal[? "alpha3"]) + ");";
 	}
 	finalText += "\n";
 
@@ -45,25 +45,25 @@ with(objParticleController){
 	finalText += "\n";
 
 	//SIZE
-	finalText += "part_type_size(" + partName + ", " + string(mapLocal[? "sizemin"]) + ", " + string(mapLocal[? "sizemax"]) + ", " + string(mapLocal[? "sizeincr"]) + ", " + string(mapLocal[? "sizewigg"]) + ");";
+	finalText += "part_type_size(" + partName + ", " + to_string(mapLocal[? "sizemin"]) + ", " + to_string(mapLocal[? "sizemax"]) + ", " + to_string(mapLocal[? "sizeincr"]) + ", " + to_string(mapLocal[? "sizewigg"]) + ");";
 	finalText += "\n";
-	finalText += "part_type_scale(" + partName + ", " + string(mapLocal[? "sizescalex"]) + ", " + string(mapLocal[? "sizescaley"]) + ");";
+	finalText += "part_type_scale(" + partName + ", " + to_string(mapLocal[? "sizescalex"]) + ", " + to_string(mapLocal[? "sizescaley"]) + ");";
 	finalText += "\n";
 
 	//SPEED
-	finalText += "part_type_speed(" + partName + ", " + string(mapLocal[? "speedmin"]) + ", " + string(mapLocal[? "speedmax"]) + ", " + string(mapLocal[? "speedincr"]) + ", " + string(mapLocal[? "speedwigg"]) + ");";
+	finalText += "part_type_speed(" + partName + ", " + to_string(mapLocal[? "speedmin"]) + ", " + to_string(mapLocal[? "speedmax"]) + ", " + to_string(mapLocal[? "speedincr"]) + ", " + to_string(mapLocal[? "speedwigg"]) + ");";
 	finalText += "\n";
-	finalText += "part_type_gravity(" + partName + ", " + string(mapLocal[? "gravqnt"]) + ", " + string(mapLocal[? "gravdir"]) + ");";
+	finalText += "part_type_gravity(" + partName + ", " + to_string(mapLocal[? "gravqnt"]) + ", " + to_string(mapLocal[? "gravdir"]) + ");";
 	finalText += "\n";
 
 	//DIRECTION & ORIENTATION
-	finalText += "part_type_direction(" + partName + ", " + string(mapLocal[? "directionmin"]) + ", " + string(mapLocal[? "directionmax"]) + ", " + string(mapLocal[? "directionincr"]) + ", " + string(mapLocal[? "directionwigg"]) + ");";
+	finalText += "part_type_direction(" + partName + ", " + to_string(mapLocal[? "directionmin"]) + ", " + to_string(mapLocal[? "directionmax"]) + ", " + to_string(mapLocal[? "directionincr"]) + ", " + to_string(mapLocal[? "directionwigg"]) + ");";
 	finalText += "\n";
-	finalText += "part_type_orientation(" + partName + ", " + string(mapLocal[? "orientationmin"]) + ", " + string(mapLocal[? "orientationmax"]) + ", " + string(mapLocal[? "orientationincr"]) + ", " + string(mapLocal[? "orientationwigg"]) + ", " + bool_to_string(mapLocal[? "relative"]) + ");";
+	finalText += "part_type_orientation(" + partName + ", " + to_string(mapLocal[? "orientationmin"]) + ", " + to_string(mapLocal[? "orientationmax"]) + ", " + to_string(mapLocal[? "orientationincr"]) + ", " + to_string(mapLocal[? "orientationwigg"]) + ", " + bool_to_string(mapLocal[? "relative"]) + ");";
 	finalText += "\n";
 
 	//LIFE
-	finalText += "part_type_life(" + partName + ", " + string(mapLocal[? "lifemin"]) + ", " + string(mapLocal[? "lifemax"]) + ");";
+	finalText += "part_type_life(" + partName + ", " + to_string(mapLocal[? "lifemin"]) + ", " + to_string(mapLocal[? "lifemax"]) + ");";
 	finalText += "\n";
 
 }
