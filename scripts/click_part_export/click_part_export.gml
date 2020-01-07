@@ -20,7 +20,7 @@ with(objParticleController){
 		finalText += "\n";
 		
 		finalText += "//STEP PARTICLE\n";
-		finalText += part_map_to_string(mapOriginal, "partSampleStep", "varShapeSpriteStep");
+		finalText += part_map_to_string(mapStep, "partSampleStep", "varShapeSpriteStep");
 	}
 
 	//DEATH
@@ -30,7 +30,7 @@ with(objParticleController){
 		finalText += "\n";
 
 		finalText += "//DEATH PARTICLE\n";
-		finalText += part_map_to_string(mapOriginal, "partSampleDeath", "varShapeSpriteDeath");
+		finalText += part_map_to_string(mapDeath, "partSampleDeath", "varShapeSpriteDeath");
 	}
 	
 	
