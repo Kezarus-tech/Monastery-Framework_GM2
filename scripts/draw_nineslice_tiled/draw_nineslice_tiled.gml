@@ -38,31 +38,30 @@ if( sprite_get_width(sprite)%3 != 0 || sprite_get_height(sprite)%3 != 0 ){
     show_debug_message("WARNING: Sprite is not a multiple of 3.");
 }
 
-var width = abs(x2-x1);
-var height = abs(y2-y1);
-
 
 // Middle ----------------------------------------------------------------------------------------------------------------
 var xx, yy;
 for(xx=x1+slice_width; xx<x2-slice_width; xx+=slice_width){
     for(var yy=y1+slice_height; yy<y2-slice_height; yy+=slice_height){
-        draw_sprite_part_ext(sprite, choose(0, 0, irandom(wSprNumber)), slice_width, slice_height, slice_width, slice_height, xx, yy, 1, 1, color, alpha); //Middle
+        draw_sprite_part_ext(sprite, choose(0, 0, irandom(wSprNumber)), slice_width, slice_height, min(slice_width, x2-xx-slice_width), min(slice_height, y2-yy-slice_height), xx, yy, 1, 1, color, alpha); //Middle
     }
 }
 
 for(var yy=y1+slice_height; yy<y2-slice_height; yy+=slice_height){
-    draw_sprite_part_ext(sprite, choose(0, 0, irandom(wSprNumber)), 0,              slice_height, slice_width, slice_height, x1,             yy, 1, 1, color, alpha); //Left
-    draw_sprite_part_ext(sprite, choose(0, 0, irandom(wSprNumber)), slice_width*2,  slice_height, slice_width, slice_height, x2-slice_width, yy, 1, 1, color, alpha); //Right
+    draw_sprite_part_ext(sprite, choose(0, 0, irandom(wSprNumber)), 0,              slice_height, slice_width, min(slice_height, y2-yy-slice_height), x1,             yy, 1, 1, color, alpha); //Left
+    draw_sprite_part_ext(sprite, choose(0, 0, irandom(wSprNumber)), slice_width*2,  slice_height, slice_width, min(slice_height, y2-yy-slice_height), x2-slice_width, yy, 1, 1, color, alpha); //Right
 }
 
 
+
 // Top & Bottom ----------------------------------------------------------------------------------------------------------
+
 xx = x1;
 draw_sprite_part_ext(sprite, choose(0, 0, irandom(wSprNumber)), 0, 0,               slice_width, slice_height,   xx, y1,              1, 1, color, alpha); //Top Left
 draw_sprite_part_ext(sprite, choose(0, 0, irandom(wSprNumber)), 0, slice_height*2,  slice_width, slice_height*2, xx, y2-slice_height, 1, 1, color, alpha); //Bottom Left
 for(xx=x1+slice_width; xx<x2-slice_width; xx+=slice_width){
-    draw_sprite_part_ext(sprite, choose(0, 0, irandom(wSprNumber)), slice_width, 0,              slice_width, slice_height, xx, y1,              1, 1, color, alpha); //Top Middle
-    draw_sprite_part_ext(sprite, choose(0, 0, irandom(wSprNumber)), slice_width, slice_height*2, slice_width, slice_height, xx, y2-slice_height, 1, 1, color, alpha); //Bottom Middle
+    draw_sprite_part_ext(sprite, choose(0, 0, irandom(wSprNumber)), slice_width, 0,              min(slice_width, x2-xx-slice_width), slice_height, xx, y1,              1, 1, color, alpha); //Top Middle
+    draw_sprite_part_ext(sprite, choose(0, 0, irandom(wSprNumber)), slice_width, slice_height*2, min(slice_width, x2-xx-slice_width), slice_height, xx, y2-slice_height, 1, 1, color, alpha); //Bottom Middle
 }
 draw_sprite_part_ext(sprite, choose(0, 0, irandom(wSprNumber)), slice_width*2, 0,              slice_width, slice_height, x2-slice_width, y1,              1, 1, color, alpha); //Top Right
 draw_sprite_part_ext(sprite, choose(0, 0, irandom(wSprNumber)), slice_width*2, slice_height*2, slice_width, slice_height, x2-slice_width, y2-slice_height, 1, 1, color, alpha); //Bottom Right
