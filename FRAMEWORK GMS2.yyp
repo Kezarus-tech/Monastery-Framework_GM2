@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "2598308a-dc0b-47d0-9834-97a0a3b31bc4",
+            "Value": {
+                "id": "452e62a4-77eb-42c9-91d9-27085a8eda88",
+                "resourcePath": "datafiles_yy\\Framework\\Languages\\Fonts\\NotoSansJP-Bold.otf.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "27b16a23-2c70-4945-b408-33695eb86737",
             "Value": {
                 "id": "a9bd6ac8-f8d2-4621-86dc-39d2c8718be6",
@@ -252,6 +260,14 @@
                 "id": "541bd689-4c76-40b2-be0d-38121612a5a0",
                 "resourcePath": "scripts\\draw_nineslice_streched\\draw_nineslice_streched.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "29eaace9-6363-495b-be87-5d6ca84d69eb",
+            "Value": {
+                "id": "bc616fe3-b7ad-4262-a218-29e37aa136c9",
+                "resourcePath": "datafiles_yy\\Framework\\Languages\\Fonts\\NotoSans-Bold.ttf.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -703,14 +719,6 @@
             }
         },
         {
-            "Key": "7969748e-840d-46f0-95af-fb5fbdd2df26",
-            "Value": {
-                "id": "5de12eb3-7bc6-474d-933d-343c0b3a0efd",
-                "resourcePath": "datafiles_yy\\Framework\\Languages\\Fonts\\NotoSansTC-Regular.otf.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "799b3ba4-4122-46f7-95ed-d319b35a1450",
             "Value": {
                 "id": "c81e79f8-a21a-477c-af5c-987650f90095",
@@ -828,6 +836,14 @@
                 "id": "eec6e145-e46c-4458-97a1-02eaed4d3bf3",
                 "resourcePath": "objects\\objModalButton\\objModalButton.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8b0cb828-d2f8-41a5-a658-c0443cd53493",
+            "Value": {
+                "id": "246e4cca-b212-405f-86ee-61a5e453798b",
+                "resourcePath": "datafiles_yy\\Framework\\Languages\\Fonts\\NotoSansTC-Bold.otf.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -1004,14 +1020,6 @@
                 "id": "ec4e6088-1eee-409c-906c-0f7808b24d9f",
                 "resourcePath": "sprites\\sprNineSlices\\sprNineSlices.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "aac4994e-ccc4-49f2-bd1b-0ccdb55a69cd",
-            "Value": {
-                "id": "fac62ae2-14b5-47ae-8a1f-8500102cae78",
-                "resourcePath": "datafiles_yy\\Framework\\Languages\\Fonts\\NotoSansJP-Regular.otf.yy",
-                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -1327,14 +1335,6 @@
             }
         },
         {
-            "Key": "d9da466b-1fc4-474d-bc61-2c6f53a14e5e",
-            "Value": {
-                "id": "4d4ae37c-0b19-467f-b8c8-463f33920f24",
-                "resourcePath": "datafiles_yy\\Framework\\Languages\\Fonts\\NotoSans-Regular.ttf.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "dca35dba-f215-48fd-9f48-acf14656909c",
             "Value": {
                 "id": "8f8b280f-2b02-4e93-8b8a-fad31c9635e1",
@@ -1635,9 +1635,9 @@
         "5b76c244-b6e2-4215-b017-12d747466d5a",
         "f99ed792-9ef0-47cd-9c39-661a333af9c2",
         "52aa5a7b-d556-4ecd-b645-384e575f1581",
+        "f90ebbcf-40b5-485a-8120-5658cf1e5c2f",
         "4c29df60-73ed-41bc-b977-7aa5fcf4f8dc",
         "d1ab94fa-e21b-42ca-818a-bb258aa03559",
-        "f90ebbcf-40b5-485a-8120-5658cf1e5c2f",
         "df5ece12-9a05-4396-9f42-89fae389314e",
         "a8678a39-03cc-4d15-80dd-d818913ceff8",
         "ba7092c8-2c5f-405d-9418-115b215e2b21",

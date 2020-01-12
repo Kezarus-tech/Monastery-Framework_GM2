@@ -10,13 +10,13 @@ switch( string_upper(argument0) ){
 		font = font_add(path + "OdibeeSans-Regular.ttf", 20, false, false, 32, 127);
 		break;
 	case "CYRILLIC":
-		font = font_add(path + "NotoSans-Regular.ttf", 20, false, false, 32, 127);
+		font = font_add(path + "NotoSans-Bold.ttf", 14, false, false, 32, 127);
 		break;
 	case "JAPANESE":
-		font = font_add(path + "NotoSansJP-Regular.otf", 20, false, false, 32, 127);
+		font = font_add(path + "NotoSansJP-Bold.otf", 14, false, false, 32, 127);
 		break;
 	case "CHINESE":
-		font = font_add(path + "NotoSansTC-Regular.otf", 20, false, false, 32, 127);
+		font = font_add(path + "NotoSansTC-Bold.otf", 14, false, false, 32, 127);
 		break;
 }
 
