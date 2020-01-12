@@ -9,7 +9,7 @@ var btnHeight = 40;
 var btnOffset = 5;
 
 width = (offset*2) + btnWidth;
-height = (offset*2) + btnHeight + ((btnHeight+btnOffset) * 7);
+height = (offset*2) + btnHeight + ((btnHeight+btnOffset) * 8);
 
 x = (ww div 2) //middle of the screen
     -(width div 2);
@@ -32,6 +32,9 @@ gui_create_button(wx, wy, btnWidth, btnHeight, "Easy GUI", func_room_goto, roomE
 
 wy += btnHeight + btnOffset;
 gui_create_button(wx, wy, btnWidth, btnHeight, "Options", func_room_goto, roomOptions);
+
+wy += btnHeight + btnOffset;
+gui_create_button(wx, wy, btnWidth, btnHeight, "Language", func_room_goto, roomLanguage);
 
 wy += btnHeight + btnOffset;
 gui_create_button(wx, wy, btnWidth, btnHeight, "Shake", func_room_goto, roomShake);

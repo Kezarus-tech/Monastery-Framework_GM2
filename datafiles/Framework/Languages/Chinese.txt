@@ -1,0 +1,8 @@
+<FONT-FAMILY>|CHINESE
+English|英語
+Portuguese|葡萄牙語
+German|德語
+Russian|俄語
+Japanese|日本
+Chinese|中文
+Main Menu|主菜單

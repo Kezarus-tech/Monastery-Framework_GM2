@@ -1,0 +1,8 @@
+<FONT-FAMILY>|CYRILLIC
+English|английский
+Portuguese|португальский
+German|немецкий
+Russian|русский
+Japanese|японский
+Chinese|китайский
+Main Menu|Главное меню

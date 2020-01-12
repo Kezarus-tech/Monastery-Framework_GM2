@@ -18,7 +18,7 @@ depth = 0; //always above panels
 
 origin = GUI_TOPLEFT; // GUI_TOPLEFT or GUI_CENTER
 
-fontType = fntStandard;
+fontType = global.language_font;
 fontScale = 1;
 fontColor = c_yellow;
 fontAlign = fa_center; //fa_center, fa_left

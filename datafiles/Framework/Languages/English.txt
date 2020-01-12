@@ -1,0 +1,8 @@
+<FONT-FAMILY>|LATIN
+English|English
+Portuguese|Portuguese
+German|German
+Russian|Russian
+Japanese|Japanese
+Chinese|Chinese
+Main Menu|Main Menu

@@ -5,7 +5,7 @@ text = "Displayed Text"; //displayed text
 width = 200;
 height = 50;
 
-fontType = fntStandard;
+fontType = global.language_font;
 fontColor = c_yellow;
 textOffset = 10;
 

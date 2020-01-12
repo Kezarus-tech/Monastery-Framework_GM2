@@ -21,7 +21,7 @@ valuePosfixText = "";
 valueMin = 0;
 valueMax = 100;
 
-fontType = fntStandard;
+fontType = global.language_font;
 fontScale = 1;
 fontColor = c_yellow;
 

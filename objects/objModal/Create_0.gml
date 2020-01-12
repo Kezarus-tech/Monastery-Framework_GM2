@@ -1,7 +1,7 @@
 event_inherited();
 
 #region CUSTOMIZEABLE VARIABLES
-fontType = fntStandard;
+fontType = global.language_font;
 fontColor = c_yellow;
 fontOffset = 20;
 

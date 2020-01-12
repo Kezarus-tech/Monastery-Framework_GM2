@@ -13,7 +13,7 @@ guiSprite = sprInputText;
 guiSpriteFocus = sprInputText;
 depth = 0; //always above panels
 
-fontType = fntStandard;
+fontType = global.language_font;
 fontScale = 1;
 fontColor = c_yellow;
 textOffset = 10;

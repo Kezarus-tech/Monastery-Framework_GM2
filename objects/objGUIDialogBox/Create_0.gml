@@ -8,7 +8,7 @@ guiSprite = sprPanel;
 depth = 100; //same level as panels
 origin = GUI_TOPLEFT; // GUI_TOPLEFT or GUI_CENTER
 
-fontType = fntStandard;
+fontType = global.language_font;
 fontColor = c_yellow;
 textOffset = 10;
 

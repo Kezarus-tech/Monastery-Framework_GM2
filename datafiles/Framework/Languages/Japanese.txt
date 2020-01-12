@@ -1,0 +1,8 @@
+<FONT-FAMILY>|JAPANESE
+English|英語
+Portuguese|ポルトガル語
+German|ドイツ人
+Russian|ロシア
+Japanese|日本語
+Chinese|中国語
+Main Menu|メインメニュー

@@ -4,8 +4,7 @@
 audio_group_load(AlwaysOn);
 
 #region INI FILE
-fileName = "CONFIG.INI";
-ini_open(fileName);
+ini_open("CONFIG.INI");
 
 var value = ini_read_real("prefs", "sound", 100);
 audio_group_set_gain(AlwaysOn, value/100, 1);
@@ -26,6 +25,11 @@ instance_create(-1000, -1000, objParticleEngine);
 
 #endregion
 
+#region RUN ESSENTIAL SCRIPTS
+
+lang_initialize();
+
+#endregion
 
 ///GO TO MAIN ROOM
 room_goto(roomMainFramework);
