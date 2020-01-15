@@ -19,6 +19,7 @@ if( variable_global_exists("language_map") ){
 
 global.language = argument0;
 global.language_map = ds_map_create();
+global.language_font_family = "LATIN";
 var dic = global.language_map;
 
 var file = file_text_open_read(fileName);
@@ -30,6 +31,7 @@ while (!file_text_eof(file)){
 		alert("LANGUAGE ERROR - " + argument0 + ".txt" + " have a duplicated entry for key: " + arr[0]);
 	}else{
 		if( arr[0] == "<FONT-FAMILY>" ){
+			global.language_font_family = arr[1];
 			lang_font_load(arr[1]);
 		}else if( arr[0] != "" ){
 			ds_map_add(dic, arr[0], arr[1]);

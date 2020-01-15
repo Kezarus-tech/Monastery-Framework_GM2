@@ -10,7 +10,7 @@ if( text != "" ){
         draw_text_outline( textX, textY, arrText[i], -1, width, c_black, 1 );
         textY += fontHeight;
         
-        if(textY-y > height-(textOffset*2)){
+        if(textY-y+fontHeight > height-(textOffset*1)){
             break;
         }
     }

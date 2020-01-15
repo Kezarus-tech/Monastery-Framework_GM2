@@ -1,13 +1,13 @@
-/// @description gui_create_slider( x, y, width, height, [sliderWidth], [sliderHeight], [valueMin], [valueMax], [valueUpdate] )
+/// @description gui_create_slider( x, y, width, height, sliderWidth*, sliderHeight*, valueMin*, valueMax*, valueUpdate* )
 /// @param  x
 /// @param  y
 /// @param  width
 /// @param  height
-/// @param  [sliderWidth]
-/// @param  [sliderHeight]
-/// @param  [valueMin]
-/// @param  [valueMax]
-/// @param  [valueUpdate] 
+/// @param  sliderWidth*
+/// @param  sliderHeight*
+/// @param  valueMin*
+/// @param  valueMax*
+/// @param  valueUpdate*
 
 // returns the object ID
 
