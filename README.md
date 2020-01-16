@@ -27,6 +27,6 @@ As long as you can use the sprites and objects as they are, I encourage you to c
 
 You can use it in all your games for free. Just credit me, Kezarus and put a link to my Twitter (https://twitter.com/CesarOttani), in your final product.
 
-If you like this, please consider donating any amount through this PayPal link (https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AKXWGHSAS2UUL&source=url).
+If you like this, please consider donating any amount through this [PayPal link](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AKXWGHSAS2UUL&source=url).
 
-The name is because when I was starting to develop my games  I usually put gregorian chant music to play. Nowadays a put from metal to blues, sometimes chant music. =]
+The name of the Framework is because when I was starting to develop my games I usually put gregorian chant music to play. Nowadays a put from metal to blues, sometimes chant music. =]
