@@ -1,4 +1,4 @@
-# Monastery-Framework_GM2
+# Monastery Framework for Game Maker Studio 2
 A framework for Game Maker 2.0 with many useful functions and objects
 
 The main objective with this framework is to give a jump start to the basic things that all games usually have: interface, options menu, music, sound, ini files, etc.
