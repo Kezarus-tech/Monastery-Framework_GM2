@@ -610,7 +610,7 @@
             "Key": "65110468-1025-4b93-922b-0b3eeb12f11b",
             "Value": {
                 "id": "5e3fabe5-ecb0-419a-a070-917faa367797",
-                "resourcePath": "objects\\objGUIContentPanelObject\\objGUIContentPanelObject.yy",
+                "resourcePath": "objects\\objGUIContentPanelObjectOld\\objGUIContentPanelObjectOld.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -835,6 +835,14 @@
             "Value": {
                 "id": "eec6e145-e46c-4458-97a1-02eaed4d3bf3",
                 "resourcePath": "objects\\objModalButton\\objModalButton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8afe8bd7-718f-4411-9f04-277020705c79",
+            "Value": {
+                "id": "403fa376-120c-47fd-856b-6375113ec74f",
+                "resourcePath": "objects\\objGUIContentPanelObject\\objGUIContentPanelObject.yy",
                 "resourceType": "GMObject"
             }
         },

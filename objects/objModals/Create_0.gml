@@ -62,28 +62,40 @@ inst.height = appHeight - wWidth - (10 * 3);
 var offset = 10;
 
 var borderOffset = 10;
-var elementWidth = 65;
+var elementWidth = 180;
 var elementHeight = 40;
 var elementOffset = 5;
-var scrollWidth = 15;
 
 var content = instance_create(x+width+offset, y, objGUIContentPanelObject);
-content.borderOffset = borderOffset;
-content.elementOffset = elementOffset;
-content.scrollWidth = scrollWidth;
-content.elementWidth = elementWidth;
-content.elementHeight = elementHeight;
 
-content.width = (borderOffset*2)+scrollWidth+(5*(elementWidth+elementOffset))-elementOffset;
-content.height = (borderOffset*2)+(11*(elementHeight+elementOffset))-elementOffset;
+content.width = 700;
+content.height = 300;
+content.heightIncrement = elementHeight+elementOffset;
 
-var btn;
+var inst;
 var text = "";
-for (var i=0; i<100; i++){
-    text = "B" + string(i);
-    btn = gui_create_button(-100, -100, elementWidth, elementHeight, text, alert, text);
-    
-    ds_list_add(content.lstContent, btn);
+
+var wx = content.x + borderOffset;
+var wy = content.y + borderOffset;
+
+for (var i=0; i<=30; i++){
+	inst = gui_create_label("Label " + string(i), wx, wy+7);
+	inst.fontAlign = fa_left;
+	ds_list_add(content.lstContent, inst);
+	
+    text = "Button A" + string(i);
+    inst = gui_create_button(wx+100, wy, elementWidth, elementHeight, text, alert, text);
+    ds_list_add(content.lstContent, inst);
+	
+	text = "Button B" + string(i);
+    inst = gui_create_button(wx+110+elementWidth, wy, elementWidth, elementHeight, text, alert, text);
+    ds_list_add(content.lstContent, inst);
+	
+	text = "Button C" + string(i);
+    inst = gui_create_button(wx+120+(elementWidth*2), wy, elementWidth, elementHeight, text, alert, text);
+    ds_list_add(content.lstContent, inst);
+	
+	wy += elementHeight + elementOffset;
 }
 
 

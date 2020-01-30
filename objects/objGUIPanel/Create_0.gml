@@ -1,5 +1,7 @@
 /// @description VARIABLES
 
+event_inherited();
+
 #region CUSTOMIZEABLE VARIABLES
 
 width = 200;
