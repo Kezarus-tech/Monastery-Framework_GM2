@@ -10,7 +10,8 @@
         "792e7039-6b16-42b1-8df6-d39a8eb8c57c",
         "f7a8da12-31a4-461f-be3c-0759470db6ee",
         "92f0689c-466d-48a2-9c28-4081739898f0",
-        "1c14235d-16c5-4944-9b7d-4f49caf4fa28"
+        "1c14235d-16c5-4944-9b7d-4f49caf4fa28",
+        "884fedd3-1704-4ce2-b94d-1231428a2467"
     ],
     "filterType": "GMRoom",
     "folderName": "Demo",

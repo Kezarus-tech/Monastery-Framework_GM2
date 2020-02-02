@@ -9,7 +9,7 @@ var btnHeight = 40;
 var btnOffset = 5;
 
 width = (offset*2) + btnWidth;
-height = (offset*2) + btnHeight + ((btnHeight+btnOffset) * 8);
+height = (offset*2) + btnHeight + ((btnHeight+btnOffset) * 9);
 
 x = (ww div 2) //middle of the screen
     -(width div 2);
@@ -37,10 +37,13 @@ wy += btnHeight + btnOffset;
 gui_create_button(wx, wy, btnWidth, btnHeight, "Language", func_room_goto, roomLanguage);
 
 wy += btnHeight + btnOffset;
+gui_create_button(wx, wy, btnWidth, btnHeight, "Rebind Keys", func_room_goto, roomRebindKeysTest);
+
+wy += btnHeight + btnOffset;
 gui_create_button(wx, wy, btnWidth, btnHeight, "Shake", func_room_goto, roomShake);
 
 wy += btnHeight + btnOffset;
-gui_create_button(wx, wy, btnWidth, btnHeight, "Modals SO", func_room_goto, roomModalSO);
+gui_create_button(wx, wy, btnWidth, btnHeight, "Modals OS", func_room_goto, roomModalSO);
 
 wy += btnHeight + btnOffset;
 gui_create_button(wx, wy, btnWidth, btnHeight, "Particles Lab", func_room_goto, roomParticleLabs);

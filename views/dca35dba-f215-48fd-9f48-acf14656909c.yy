@@ -6,7 +6,8 @@
     "children": [
         "66c31318-e235-4208-97f0-90939644aa24",
         "354f3633-52e3-4408-a79b-c1e73a19ef3b",
-        "47d938d9-4dd2-4589-8df0-81b9f45a3f64"
+        "47d938d9-4dd2-4589-8df0-81b9f45a3f64",
+        "35a7d735-f051-44f1-a2f6-681dc651ccf3"
     ],
     "filterType": "GMScript",
     "folderName": "Essentials",

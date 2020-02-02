@@ -7,7 +7,8 @@
         "8c1d4bdd-8680-480e-b82d-2f189e45476f",
         "7ec696cf-a39f-4971-924e-74a2e13f917a",
         "c66275c7-4922-4381-9518-cafc19527400",
-        "cdf5d934-50ef-4236-9e3c-a5ee8f2ccf84"
+        "cdf5d934-50ef-4236-9e3c-a5ee8f2ccf84",
+        "d28c32c3-0326-4d2a-9a44-bb606ec5e342"
     ],
     "filterType": "GMObject",
     "folderName": "Essentials",

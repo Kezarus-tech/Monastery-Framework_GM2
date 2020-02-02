@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "21473c95-f357-4527-9857-e7af66230e90",
+            "Value": {
+                "id": "96e1d360-976c-4a09-924c-ac1dccb4fe44",
+                "resourcePath": "scripts\\check_key_internal\\check_key_internal.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "217466b2-497c-4481-ae49-e73ec03c1506",
             "Value": {
                 "id": "e1cbfc35-7f52-45a5-b124-eccfb0156529",
@@ -279,6 +287,14 @@
             }
         },
         {
+            "Key": "2adbcec7-8a33-4a0f-b5d7-6cf64e9f1c55",
+            "Value": {
+                "id": "8d1a4013-3447-457e-b100-0425a4c7d760",
+                "resourcePath": "objects\\objRebindTestController\\objRebindTestController.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2afcfa4c-f789-47ad-b3e5-45f657c265ad",
             "Value": {
                 "id": "eef712d7-71a4-4fa9-9534-05f6000183eb",
@@ -291,6 +307,14 @@
             "Value": {
                 "id": "b7687d5a-3f23-460b-a560-880e83dd595c",
                 "resourcePath": "scripts\\click_edit_particle\\click_edit_particle.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "2cd8eda4-f216-4768-9b82-c83750520ec1",
+            "Value": {
+                "id": "4f2b40ba-9df5-4060-aeb8-42ea8d7035d7",
+                "resourcePath": "scripts\\key_code_to_string\\key_code_to_string.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -331,6 +355,14 @@
             "Value": {
                 "id": "8d81fe33-5b96-43ad-ab56-a1678dc03f03",
                 "resourcePath": "views\\354f3633-52e3-4408-a79b-c1e73a19ef3b.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "35a7d735-f051-44f1-a2f6-681dc651ccf3",
+            "Value": {
+                "id": "1cb26c7e-78bc-4fa9-b2a7-61202f34e8ea",
+                "resourcePath": "views\\35a7d735-f051-44f1-a2f6-681dc651ccf3.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -460,6 +492,14 @@
                 "id": "9416d180-35e9-4d59-bd19-42e6a645274e",
                 "resourcePath": "objects\\objModal\\objModal.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4775d751-ca7a-4990-a17f-d7e874f700f1",
+            "Value": {
+                "id": "488f4225-eab1-4f3d-8f57-837c3801030e",
+                "resourcePath": "rooms\\roomRebindKeys\\roomRebindKeys.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -823,6 +863,14 @@
             }
         },
         {
+            "Key": "884fedd3-1704-4ce2-b94d-1231428a2467",
+            "Value": {
+                "id": "4ab12a17-d55c-4742-99cf-e3e49fe43ca5",
+                "resourcePath": "rooms\\roomRebindKeysTest\\roomRebindKeysTest.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "88aeeefc-8184-4a20-97dc-5b3043a9cc0b",
             "Value": {
                 "id": "64a026a6-92d7-4759-9153-77c8e7738dce",
@@ -940,6 +988,14 @@
                 "id": "6dfe84d4-4da6-436a-a4dc-d1dd00f091bd",
                 "resourcePath": "objects\\objMouseGui\\objMouseGui.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a122c702-9f4c-4a4c-aa1a-a1eebc715dd0",
+            "Value": {
+                "id": "ab3c735f-880d-43da-9a72-f639947d770a",
+                "resourcePath": "views\\a122c702-9f4c-4a4c-aa1a-a1eebc715dd0.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1127,6 +1183,14 @@
             }
         },
         {
+            "Key": "bbb6411a-fff6-4ea7-b787-74149c9709ad",
+            "Value": {
+                "id": "5e250059-72f1-4e6a-a615-72e793321b09",
+                "resourcePath": "scripts\\check_input_button\\check_input_button.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "bbea17f5-aa4d-4613-9810-1bcaf931957f",
             "Value": {
                 "id": "cc100b5b-8f44-4763-b5f5-96a7ce085406",
@@ -1223,6 +1287,14 @@
             }
         },
         {
+            "Key": "cbe25b6c-729a-4cf6-9879-3f9dcbcc535f",
+            "Value": {
+                "id": "a850d7c7-54b9-4a53-9e32-2c420626cfcd",
+                "resourcePath": "scripts\\check_key\\check_key.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "7a49cab5-b31c-4f59-87b6-c24913066f48",
@@ -1276,6 +1348,14 @@
                 "id": "89cfe480-9c88-43d6-a9c4-3451970f2ecd",
                 "resourcePath": "scripts\\lang_btn_click\\lang_btn_click.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d28c32c3-0326-4d2a-9a44-bb606ec5e342",
+            "Value": {
+                "id": "16325a55-b545-414d-b1b9-c29bfead16fc",
+                "resourcePath": "views\\d28c32c3-0326-4d2a-9a44-bb606ec5e342.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1583,6 +1663,14 @@
             }
         },
         {
+            "Key": "fd5fbf85-8e23-441f-bc6d-f7c82bd0f091",
+            "Value": {
+                "id": "8a33ab27-d93a-47ec-a7d2-2958f4b410fe",
+                "resourcePath": "scripts\\RebindKeysEnums\\RebindKeysEnums.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ff06476a-15dc-4404-b903-ae5c50eb5a2e",
             "Value": {
                 "id": "b58f0b27-4940-47ef-baa2-7be870a7ed6d",
@@ -1646,6 +1734,11 @@
         "f90ebbcf-40b5-485a-8120-5658cf1e5c2f",
         "4c29df60-73ed-41bc-b977-7aa5fcf4f8dc",
         "d1ab94fa-e21b-42ca-818a-bb258aa03559",
+        "fd5fbf85-8e23-441f-bc6d-f7c82bd0f091",
+        "bbb6411a-fff6-4ea7-b787-74149c9709ad",
+        "2cd8eda4-f216-4768-9b82-c83750520ec1",
+        "cbe25b6c-729a-4cf6-9879-3f9dcbcc535f",
+        "21473c95-f357-4527-9857-e7af66230e90",
         "df5ece12-9a05-4396-9f42-89fae389314e",
         "a8678a39-03cc-4d15-80dd-d818913ceff8",
         "ba7092c8-2c5f-405d-9418-115b215e2b21",
