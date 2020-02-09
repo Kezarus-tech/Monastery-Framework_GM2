@@ -1,53 +1,43 @@
 {
-    "id": "65110468-1025-4b93-922b-0b3eeb12f11b",
+    "id": "8b65d0ed-2e01-40ef-b7a6-e30e55cef844",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "objGUIContentPanelObjectOld",
+    "name": "objRebindKeysController",
     "eventList": [
         {
-            "id": "2169df2b-4bf1-41f8-848c-15ea3f783bd7",
+            "id": "7318d636-2ac0-44f2-a521-2b0af6a71aa7",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "65110468-1025-4b93-922b-0b3eeb12f11b"
+            "m_owner": "8b65d0ed-2e01-40ef-b7a6-e30e55cef844"
         },
         {
-            "id": "4b72b40f-20e5-452e-9d16-1aaa814adf6f",
+            "id": "2f76f71c-e03d-4fb9-8e84-eda5ddee9bfd",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 2,
-            "m_owner": "65110468-1025-4b93-922b-0b3eeb12f11b"
+            "enumb": 10,
+            "eventtype": 7,
+            "m_owner": "8b65d0ed-2e01-40ef-b7a6-e30e55cef844"
         },
         {
-            "id": "6516ed7a-07b8-4ae1-a8b5-c9a41d4ad504",
+            "id": "5a9ec82f-737c-4102-a367-bdbd4a616d51",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "65110468-1025-4b93-922b-0b3eeb12f11b"
-        },
-        {
-            "id": "bbb74422-e2f7-4f03-9084-3ab0f6821dc0",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 5,
-            "eventtype": 7,
-            "m_owner": "65110468-1025-4b93-922b-0b3eeb12f11b"
+            "m_owner": "8b65d0ed-2e01-40ef-b7a6-e30e55cef844"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "6639da99-95b3-4dba-8a94-807e2cf47616",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -58,10 +48,8 @@
     "physicsObject": false,
     "physicsRestitution": 0.1,
     "physicsSensor": false,
-    "physicsShape": 0,
-    "physicsShapePoints": [
-        
-    ],
+    "physicsShape": 1,
+    "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,

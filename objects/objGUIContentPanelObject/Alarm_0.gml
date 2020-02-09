@@ -27,7 +27,8 @@ for(var i=0; i<ds_list_size(lstContent); i++){
 
 
 //HOW MANY LINES FIT IN THE PANEL?
-linesMax = ((instanceBottom.y - instanceTop.y)-(height-y)+instanceBottom.height) / heightIncrement;
+//linesMax = ((instanceBottom.y - instanceTop.y)-(height-y)+instanceBottom.height) / heightIncrement;
+linesMax = ((instanceBottom.y - instanceTop.y)-height+instanceBottom.height) / heightIncrement;
 linesMax = ceil(linesMax);
 
 

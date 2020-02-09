@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "0e14e080-e2de-4b81-92d2-3bf456e4ca26",
+            "Value": {
+                "id": "73b747ed-af54-425c-85cb-1ba27018b5e2",
+                "resourcePath": "scripts\\rebind_key\\rebind_key.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0e8a7c2f-5cf4-4b10-90a3-a6f93b5ab01b",
             "Value": {
                 "id": "27722721-628a-4092-a6db-f607be3004fd",
@@ -607,6 +615,14 @@
             }
         },
         {
+            "Key": "5cdd029d-7996-46bc-86a3-44053211dbbe",
+            "Value": {
+                "id": "d8d35ec9-854f-4a66-b090-cbfee08d06e8",
+                "resourcePath": "scripts\\rebind_key_click\\rebind_key_click.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5e6875e8-55e8-4561-810b-a13cdee8aad3",
             "Value": {
                 "id": "eba8ecab-9769-4e57-89ab-535bebf9cccf",
@@ -643,14 +659,6 @@
             "Value": {
                 "id": "d9712285-74cb-494c-afa8-002693ca7c3e",
                 "resourcePath": "objects\\btnModalManyOptions\\btnModalManyOptions.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "65110468-1025-4b93-922b-0b3eeb12f11b",
-            "Value": {
-                "id": "5e3fabe5-ecb0-419a-a070-917faa367797",
-                "resourcePath": "objects\\objGUIContentPanelObjectOld\\objGUIContentPanelObjectOld.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -900,6 +908,14 @@
                 "id": "246e4cca-b212-405f-86ee-61a5e453798b",
                 "resourcePath": "datafiles_yy\\Framework\\Languages\\Fonts\\NotoSansTC-Bold.otf.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "8b65d0ed-2e01-40ef-b7a6-e30e55cef844",
+            "Value": {
+                "id": "45f44d75-1b78-4939-bea6-ac0a9b8a36d1",
+                "resourcePath": "objects\\objRebindKeysController\\objRebindKeysController.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1295,6 +1311,14 @@
             }
         },
         {
+            "Key": "cbef09fe-e7c8-4c4e-b51e-b012eff12d3a",
+            "Value": {
+                "id": "8535a25e-fef3-4233-91fa-704234ecf927",
+                "resourcePath": "scripts\\rebind_keys_initialize\\rebind_keys_initialize.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "7a49cab5-b31c-4f59-87b6-c24913066f48",
@@ -1666,7 +1690,7 @@
             "Key": "fd5fbf85-8e23-441f-bc6d-f7c82bd0f091",
             "Value": {
                 "id": "8a33ab27-d93a-47ec-a7d2-2958f4b410fe",
-                "resourcePath": "scripts\\RebindKeysEnums\\RebindKeysEnums.yy",
+                "resourcePath": "scripts\\RebindKeysConfigs\\RebindKeysConfigs.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1735,6 +1759,9 @@
         "4c29df60-73ed-41bc-b977-7aa5fcf4f8dc",
         "d1ab94fa-e21b-42ca-818a-bb258aa03559",
         "fd5fbf85-8e23-441f-bc6d-f7c82bd0f091",
+        "cbef09fe-e7c8-4c4e-b51e-b012eff12d3a",
+        "5cdd029d-7996-46bc-86a3-44053211dbbe",
+        "0e14e080-e2de-4b81-92d2-3bf456e4ca26",
         "bbb6411a-fff6-4ea7-b787-74149c9709ad",
         "2cd8eda4-f216-4768-9b82-c83750520ec1",
         "cbe25b6c-729a-4cf6-9879-3f9dcbcc535f",

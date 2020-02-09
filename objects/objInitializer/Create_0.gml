@@ -28,6 +28,7 @@ instance_create(-1000, -1000, objParticleEngine);
 #region RUN ESSENTIAL SCRIPTS
 
 lang_initialize();
+rebind_keys_initialize();
 
 #endregion
 

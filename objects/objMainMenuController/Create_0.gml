@@ -37,7 +37,7 @@ wy += btnHeight + btnOffset;
 gui_create_button(wx, wy, btnWidth, btnHeight, "Language", func_room_goto, roomLanguage);
 
 wy += btnHeight + btnOffset;
-gui_create_button(wx, wy, btnWidth, btnHeight, "Rebind Keys", func_room_goto, roomRebindKeysTest);
+gui_create_button(wx, wy, btnWidth, btnHeight, "Rebind Keys", func_room_goto, roomRebindKeys);
 
 wy += btnHeight + btnOffset;
 gui_create_button(wx, wy, btnWidth, btnHeight, "Shake", func_room_goto, roomShake);

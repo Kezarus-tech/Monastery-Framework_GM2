@@ -1,3 +1,5 @@
+// PUT YOUR CONTROLS HERE
+// CHECK THE FUNCTION rebind_keys_initialize(); AND CHANGE IT ACORDINGLY
 enum PlayerActionEnum {
    Left,
    Right,
@@ -12,11 +14,14 @@ enum PlayerActionEnum {
    WeaponPrev
 }
 
+// DON'T CHANGE THIS ENUM
 enum KeyDataEnum{
 	InputType = 0,
-	Value = 1
+	Value = 1,
+	Text = 2
 }
 
+// DON'T CHANGE THIS ENUM
 enum InputTypeEnum{
 	Nothing = -1,
 	Keyboard = 0,

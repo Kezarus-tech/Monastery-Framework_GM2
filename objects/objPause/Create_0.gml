@@ -51,4 +51,5 @@ with(all){
 //this indicates if the pause can draw the pause text and can unpause itself
 //if set to true, a third party have to just destroy the pause
 suppress = false;
-
+showText = false;
+text = "Press 'Space' to unpause";
