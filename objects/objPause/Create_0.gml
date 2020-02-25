@@ -4,6 +4,8 @@ screen_save("PausedScreen.png");
 pauseScreenShot = sprite_add("PausedScreen.png", 1, false, false, 0, 0);
 file_delete("PausedScreen.png");
 
+myColor = c_white;
+myScale = 1;
 
 //SETUP
 appWidth = surface_get_width(application_surface);

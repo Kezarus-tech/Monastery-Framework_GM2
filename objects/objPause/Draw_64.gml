@@ -1,5 +1,9 @@
 /// @description DRAW PAUSE
-draw_sprite_ext(pauseScreenShot, 0, 0, 0, image_xscale, image_yscale, 0, c_gray, 1);
+myColor = merge_color(myColor, c_dkgray, 0.05);
+myScale = lerp(myScale, 1.025, 0.1);
+wx = -(((appWidth*myScale) - appWidth) div 2);
+wy = -(((appHeight*myScale) - appHeight) div 2);
+draw_sprite_ext(pauseScreenShot, 0, wx, wy, myScale, myScale, 0, myColor, 1);
 
 ///DRAW TEXT
 if( !suppress || showText ){
