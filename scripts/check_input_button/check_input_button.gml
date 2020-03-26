@@ -31,14 +31,16 @@ if( keyboard_key != 0){
 		arr[KeyDataEnum.Value] = mb_middle;
 	}else{
 		//Number range for controller constants
-		/*var gamepad_num = global.connected_gamepad;
-		arr[KeyDataEnum.InputType] = InputTypeEnum.Gamepad;
-	  //for (var i=32769;i<=32776;i++) {
-		for (var i=32769;i<=32788;i++) {
-		    if (gamepad_button_check(gamepad_num,i)) {
-		        arr[KeyDataEnum.Value] = i;
-		    }
-		}*/
+		var gamepad_num = global.connected_gamepad;
+		if( gamepad_num != -1 ){
+		    //for (var i=32769;i<=32776;i++) {
+			for (var i=32769;i<=32788;i++) {
+			    if (gamepad_button_check(gamepad_num,i)) {
+					arr[KeyDataEnum.InputType] = InputTypeEnum.Gamepad;
+			        arr[KeyDataEnum.Value] = i;
+			    }
+			}
+		}
 	}
 }
 

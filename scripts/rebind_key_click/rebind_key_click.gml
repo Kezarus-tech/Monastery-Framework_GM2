@@ -18,8 +18,6 @@ with(objRebindKeysController){
 	inst.showText = true;
 	inst.text = "Press any key or Esc to cancel";
 
-
-	
 	//Keep objRebindKeysController active
 	instance_activate_object(self);
 }

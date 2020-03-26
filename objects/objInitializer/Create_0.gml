@@ -22,6 +22,7 @@ ini_close();
 
 instance_create(-1000, -1000, objMouseGui);
 instance_create(-1000, -1000, objParticleEngine);
+instance_create(-1000, -1000, objGamepadDetector);
 
 #endregion
 

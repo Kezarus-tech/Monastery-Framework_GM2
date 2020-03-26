@@ -1535,6 +1535,14 @@
             }
         },
         {
+            "Key": "e6f0869a-0a33-483f-942d-7a21ab0a218a",
+            "Value": {
+                "id": "d5b29317-1e83-45e9-af88-1665e1b0e141",
+                "resourcePath": "objects\\objGamepadDetector\\objGamepadDetector.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e79f124e-8dec-47f0-992b-1260f974fc96",
             "Value": {
                 "id": "823d77dd-8d5a-42b5-9878-3ee83358a5e5",

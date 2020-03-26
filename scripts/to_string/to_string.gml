@@ -28,6 +28,8 @@ if( is_string(argument0) ){
 	}else{
 		return string(realNumber);
 	}
+}else{
+	return string(argument0);
 }
 
 

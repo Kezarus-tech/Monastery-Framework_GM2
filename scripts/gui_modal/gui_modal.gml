@@ -1,6 +1,6 @@
 /// @description gui_modal( text, options, event_perform type, event_perform number )
 /// @param text
-/// @param options - separeted by | ex: "Ok|Undo|Cancel"
+/// @param options - separeted by | ex: "Ok|Undo|Cancel", default: Ok
 /// @param event_perform type
 /// @param event_perform number
 
@@ -12,10 +12,21 @@
 //callback the function using event perform
 //and sets a variable modalAnswer
 
-var text = argument0;
-var options = argument1;
-var ev_type = argument2;
-var ev_number = argument3;
+var text = argument[0];
+var options = "Ok";
+if(argument_count > 1){
+	options = argument[1];
+}
+var ev_type = -1;
+if(argument_count > 2){
+	ev_type = argument[2]
+}
+var ev_number = -1;
+if(argument_count > 3){
+	ev_number = argument[3];
+}
+
+
 var owner = id; //who called the function
 
 var inst = instance_create(0, 0, objPause);

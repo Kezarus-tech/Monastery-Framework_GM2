@@ -3,9 +3,11 @@
 instance_destroy(objModalButton);
 instance_destroy(objPause);
 
-with( owner ){
-    modalAnswer = other.modalAnswer;
-    event_perform(other.ev_type, other.ev_number);
+if(ev_type != -1){ //CHECK FOR NO CALLBACK
+	with( owner ){
+	    modalAnswer = other.modalAnswer;
+	    event_perform(other.ev_type, other.ev_number);
+	}
 }
 
 instance_destroy();

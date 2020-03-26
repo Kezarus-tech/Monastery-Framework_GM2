@@ -14,3 +14,9 @@ for(var i=0; i<ds_list_size(list); i++){
 	text += "\n"+enumValue+": " + string(check_key(enumKey));
 }
 	
+
+
+
+
+
+	
