@@ -70,7 +70,7 @@ for(var i=0; i<ds_list_size(list); i++){
 	ds_list_add(content.lstContent, inst);
 	
 	wx += elementOffset;
-	inst = gui_create_button(wx, wy, elementWidth, elementHeight, key_code_to_string(inputKeyMapped), rebind_key_click, enumKey);
+	inst = gui_create_button(wx, wy, elementWidth, elementHeight, key_code_to_string(inputKeyMapped), rebind_key_click, enumKey, false);
 	ds_list_add(content.lstContent, inst);
 	
 	wx += elementOffset + elementWidth;

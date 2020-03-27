@@ -16,7 +16,7 @@ with(objRebindKeysController){
 	var inst = instance_create(0, 0, objPause);
 	inst.suppress = true;
 	inst.showText = true;
-	inst.text = "Press any key or Esc to cancel";
+	inst.text = "Press any key, Esc to cancel, Backspace to clear";
 
 	//Keep objRebindKeysController active
 	instance_activate_object(self);

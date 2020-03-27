@@ -1,4 +1,4 @@
-/// @description check_key_internal( key_map, PlayerActionEnum.[] )
+/// @description check_key_released_internal( key_map, PlayerActionEnum.[] )
 
 /// @param key_map the map to check
 /// @param PlayerActionEnum.[] as enumerator option
@@ -12,7 +12,7 @@ if( is_undefined(arr) ){
 }else if( arr[KeyDataEnum.InputType] == InputTypeEnum.Nothing ){
 	return false;
 }else if( arr[KeyDataEnum.InputType] == InputTypeEnum.Keyboard ){
-	return keyboard_check(arr[KeyDataEnum.Value]);
+	return keyboard_check_released(arr[KeyDataEnum.Value]);
 }else if( arr[KeyDataEnum.InputType] == InputTypeEnum.Mouse ){
 	switch(arr[KeyDataEnum.Value]){
 	case MB_WHEEL_UP:
@@ -22,10 +22,10 @@ if( is_undefined(arr) ){
 		return mouse_wheel_down();
 	break;
 	default:
-		return mouse_check_button(arr[KeyDataEnum.Value]);
+		return mouse_check_button_released(arr[KeyDataEnum.Value]);
 	}
 }else if( arr[KeyDataEnum.InputType] == InputTypeEnum.Gamepad ){
-	return gamepad_button_check(global.connected_gamepad, arr[KeyDataEnum.Value]);
+	return gamepad_button_check_released(global.connected_gamepad, arr[KeyDataEnum.Value]);
 }
 
 return false;

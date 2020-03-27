@@ -543,6 +543,14 @@
             }
         },
         {
+            "Key": "4dfd30dd-9f53-4ef0-bd7f-12014a3f51c6",
+            "Value": {
+                "id": "9e865093-e83d-4200-abc6-dd2eee2d3d78",
+                "resourcePath": "scripts\\check_key_released_internal\\check_key_released_internal.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4fdfe9de-0817-45d2-8b84-e04d97faed40",
             "Value": {
                 "id": "6270febb-b0ce-476d-9850-c1e5da02dfc1",
@@ -927,6 +935,14 @@
             }
         },
         {
+            "Key": "8bde3c00-9a53-453e-aa3f-98d81fafbcde",
+            "Value": {
+                "id": "a035fcc2-5106-4593-8072-d51331327f46",
+                "resourcePath": "scripts\\check_key_released\\check_key_released.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8c1d4bdd-8680-480e-b82d-2f189e45476f",
             "Value": {
                 "id": "a74cd3f0-e8dc-4ec5-a68e-397c93cdc32b",
@@ -972,6 +988,14 @@
                 "id": "0a640663-160d-4de5-82f5-085b341104f0",
                 "resourcePath": "rooms\\roomEasyGUI\\roomEasyGUI.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "941e0dfa-009b-4c56-8474-8b94c05d3dcd",
+            "Value": {
+                "id": "24a42878-031c-419d-8217-b23675e9cf24",
+                "resourcePath": "scripts\\check_key_pressed\\check_key_pressed.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1535,6 +1559,14 @@
             }
         },
         {
+            "Key": "e6c59bba-3809-4d49-927d-9c9357a6ba17",
+            "Value": {
+                "id": "935b4d49-3909-4c6c-ba30-dffcd0055513",
+                "resourcePath": "scripts\\check_key_pressed_internal\\check_key_pressed_internal.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e6f0869a-0a33-483f-942d-7a21ab0a218a",
             "Value": {
                 "id": "d5b29317-1e83-45e9-af88-1665e1b0e141",
@@ -1773,7 +1805,11 @@
         "bbb6411a-fff6-4ea7-b787-74149c9709ad",
         "2cd8eda4-f216-4768-9b82-c83750520ec1",
         "cbe25b6c-729a-4cf6-9879-3f9dcbcc535f",
+        "941e0dfa-009b-4c56-8474-8b94c05d3dcd",
+        "8bde3c00-9a53-453e-aa3f-98d81fafbcde",
         "21473c95-f357-4527-9857-e7af66230e90",
+        "e6c59bba-3809-4d49-927d-9c9357a6ba17",
+        "4dfd30dd-9f53-4ef0-bd7f-12014a3f51c6",
         "df5ece12-9a05-4396-9f42-89fae389314e",
         "a8678a39-03cc-4d15-80dd-d818913ceff8",
         "ba7092c8-2c5f-405d-9418-115b215e2b21",

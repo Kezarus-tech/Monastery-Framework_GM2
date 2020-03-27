@@ -11,7 +11,11 @@
         "bbb6411a-fff6-4ea7-b787-74149c9709ad",
         "2cd8eda4-f216-4768-9b82-c83750520ec1",
         "cbe25b6c-729a-4cf6-9879-3f9dcbcc535f",
-        "21473c95-f357-4527-9857-e7af66230e90"
+        "941e0dfa-009b-4c56-8474-8b94c05d3dcd",
+        "8bde3c00-9a53-453e-aa3f-98d81fafbcde",
+        "21473c95-f357-4527-9857-e7af66230e90",
+        "e6c59bba-3809-4d49-927d-9c9357a6ba17",
+        "4dfd30dd-9f53-4ef0-bd7f-12014a3f51c6"
     ],
     "filterType": "GMScript",
     "folderName": "RebindKeys",

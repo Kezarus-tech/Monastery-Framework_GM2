@@ -11,9 +11,11 @@ arr[KeyDataEnum.InputType] = InputTypeEnum.Nothing;
 arr[KeyDataEnum.Value] = -1;
 
 if( keyboard_key != 0){
+	//KEYBOARD
 	arr[KeyDataEnum.InputType] = InputTypeEnum.Keyboard;
 	arr[KeyDataEnum.Value] = keyboard_key;
 }else{
+	//MOUSE
 	if( mouse_wheel_up() ){
 		arr[KeyDataEnum.InputType] = InputTypeEnum.Mouse;
 		arr[KeyDataEnum.Value] = MB_WHEEL_UP;
@@ -30,11 +32,10 @@ if( keyboard_key != 0){
 		arr[KeyDataEnum.InputType] = InputTypeEnum.Mouse;
 		arr[KeyDataEnum.Value] = mb_middle;
 	}else{
-		//Number range for controller constants
+		//GAMEPAD
 		var gamepad_num = global.connected_gamepad;
 		if( gamepad_num != -1 ){
-		    //for (var i=32769;i<=32776;i++) {
-			for (var i=32769;i<=32788;i++) {
+			for (var i=32769;i<=32788;i++) { //all button codes
 			    if (gamepad_button_check(gamepad_num,i)) {
 					arr[KeyDataEnum.InputType] = InputTypeEnum.Gamepad;
 			        arr[KeyDataEnum.Value] = i;
