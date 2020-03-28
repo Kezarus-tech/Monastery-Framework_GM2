@@ -6,8 +6,8 @@ text1 = key_code_to_string(code[KeyDataEnum.Value]) + " (" + string(code[KeyData
 var list = global.lstControls;
 for(var i=0; i<ds_list_size(list); i++){
 	arr = list[| i];
-	enumKey = arr[0];
-	enumValue = arr[1];
+	enumKey = arr[ControlsEnum.PlayerAction];
+	enumValue = arr[ControlsEnum.Name];
 	
 	text1 += "\n"+enumValue+": " + string(check_key(enumKey));
 	

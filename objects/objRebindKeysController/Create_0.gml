@@ -19,6 +19,10 @@ wy = borderOffset;
 //MAIN MENU BUTTON
 gui_create_button(wx, wy, elementWidth, elementHeight, "Main Menu", func_room_goto, roomMainFramework);
 
+//MAIN MENU BUTTON
+wy += elementHeight + elementOffset;
+gui_create_button(wx, wy, elementWidth, elementHeight, "Restore Default", rebind_keys_restore);
+
 //TEST ROOM BUTTON
 wy += elementHeight + elementOffset;
 gui_create_button(wx, wy, elementWidth, elementHeight, "Test Room", func_room_goto, roomRebindKeysTest);
@@ -51,8 +55,8 @@ var list = global.lstControls;
 for(var i=0; i<ds_list_size(list); i++){
 	wx = wx_init;
 	arr = list[| i];
-	enumKey = arr[0];
-	textValue = arr[1];
+	enumKey = arr[ControlsEnum.PlayerAction];
+	textValue = arr[ControlsEnum.Name];
 	inputKeyMapped = -1;
 	mapArrBinding = ds_map_find_value(global.key_mapping, enumKey);
 	if( !is_undefined(mapArrBinding) ){

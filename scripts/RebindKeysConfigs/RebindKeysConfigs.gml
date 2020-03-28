@@ -17,8 +17,7 @@ enum PlayerActionEnum {
 // DON'T CHANGE THIS ENUM
 enum KeyDataEnum{
 	InputType = 0,
-	Value = 1,
-	Text = 2
+	Value = 1
 }
 
 // DON'T CHANGE THIS ENUM
@@ -28,3 +27,16 @@ enum InputTypeEnum{
 	Mouse = 1,
 	Gamepad = 2
 }
+
+// DON'T CHANGE THIS ENUM
+enum ControlsEnum{
+	PlayerAction = 0,
+	Name = 1,
+	DefaultInputType = 2,
+	DefaultValue = 3,
+	AlternativeInputType = 4,
+	AlternativeValue = 5
+}
+
+
+

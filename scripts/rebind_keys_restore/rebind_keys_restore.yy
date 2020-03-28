@@ -1,8 +1,8 @@
 {
-    "id": "0e14e080-e2de-4b81-92d2-3bf456e4ca26",
+    "id": "cd14ba16-880a-4f76-ba27-2b9781c12085",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "rebind_key",
+    "name": "rebind_keys_restore",
     "IsCompatibility": false,
     "IsDnD": false
 }

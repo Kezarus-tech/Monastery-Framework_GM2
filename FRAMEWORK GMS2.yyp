@@ -103,14 +103,6 @@
             }
         },
         {
-            "Key": "0e14e080-e2de-4b81-92d2-3bf456e4ca26",
-            "Value": {
-                "id": "73b747ed-af54-425c-85cb-1ba27018b5e2",
-                "resourcePath": "scripts\\rebind_key\\rebind_key.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "0e8a7c2f-5cf4-4b10-90a3-a6f93b5ab01b",
             "Value": {
                 "id": "27722721-628a-4092-a6db-f607be3004fd",
@@ -1351,6 +1343,14 @@
             }
         },
         {
+            "Key": "cd14ba16-880a-4f76-ba27-2b9781c12085",
+            "Value": {
+                "id": "7085ef9b-89ef-478b-ae66-ae9b7e5fcca4",
+                "resourcePath": "scripts\\rebind_keys_restore\\rebind_keys_restore.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cd83a41d-656a-4435-8557-6f807aad6fbe",
             "Value": {
                 "id": "78d6738a-41fd-471c-8805-0ae665e1a072",
@@ -1655,6 +1655,14 @@
             }
         },
         {
+            "Key": "f4c22b4b-3cd0-46f7-8134-4c10db197a1e",
+            "Value": {
+                "id": "f372f6de-df3c-406b-a80e-ca61086ee267",
+                "resourcePath": "scripts\\rebind_keys_load\\rebind_keys_load.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f57761b5-b7ff-42fa-9475-83f8b42cdd50",
             "Value": {
                 "id": "77e32f9d-d369-4bc6-8ada-11941ef90db1",
@@ -1800,8 +1808,9 @@
         "d1ab94fa-e21b-42ca-818a-bb258aa03559",
         "fd5fbf85-8e23-441f-bc6d-f7c82bd0f091",
         "cbef09fe-e7c8-4c4e-b51e-b012eff12d3a",
+        "f4c22b4b-3cd0-46f7-8134-4c10db197a1e",
+        "cd14ba16-880a-4f76-ba27-2b9781c12085",
         "5cdd029d-7996-46bc-86a3-44053211dbbe",
-        "0e14e080-e2de-4b81-92d2-3bf456e4ca26",
         "bbb6411a-fff6-4ea7-b787-74149c9709ad",
         "2cd8eda4-f216-4768-9b82-c83750520ec1",
         "cbe25b6c-729a-4cf6-9879-3f9dcbcc535f",
