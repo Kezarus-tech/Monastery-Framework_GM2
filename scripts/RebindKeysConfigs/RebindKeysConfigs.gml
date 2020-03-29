@@ -1,5 +1,5 @@
 // PUT YOUR CONTROLS HERE
-// CHECK THE FUNCTION rebind_keys_initialize(); AND CHANGE IT ACORDINGLY
+// CHECK THE FUNCTION rebind_keys_initialize();
 enum PlayerActionEnum {
    Left,
    Right,
