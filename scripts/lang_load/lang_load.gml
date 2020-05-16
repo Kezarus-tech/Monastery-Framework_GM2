@@ -26,7 +26,13 @@ var file = file_text_open_read(fileName);
 var arr;
 	
 while (!file_text_eof(file)){
-	arr = string_split( string_replace(file_text_readln(file), "\r\n", ""), "|");
+	//CLIP LAST LINE ENDING
+	textLine = string_replace(file_text_readln(file), "\r\n", "");
+	if(string_char_at(textLine, string_length(textLine)) == "\n" ){
+		textLine = string_copy(textLine, 1, string_length(textLine)-1);
+	}
+	arr = string_split(textLine, "|");
+	
 	if( ds_map_exists(dic, arr[0]) ){
 		alert("LANGUAGE ERROR - " + argument0 + ".txt" + " have a duplicated entry for key: " + arr[0]);
 	}else{
