@@ -1,10 +1,15 @@
 ///@description lang( key )
+function lang(argument0) {
 
-///@param key : a key to return the correct value from the language archive
+	///@param key : a key to return the correct value from the language archive
 
-if( !ds_map_exists(global.language_map, argument0) ){
-	alert("LANGUAGE ERROR - " + global.language + ".txt" + " don't have a value for key: " + argument0);
-	return argument0;
-}else{
-	return ds_map_find_value(global.language_map, argument0);
+	if( !ds_map_exists(global.language_map, argument0) ){
+		alert("LANGUAGE ERROR - " + global.language + ".txt" + " don't have a value for key: " + argument0);
+		return argument0;
+	}else{
+		return ds_map_find_value(global.language_map, argument0);
+	}
+
+
+
 }

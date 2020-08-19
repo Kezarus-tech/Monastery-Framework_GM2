@@ -1,8 +1,12 @@
 {
-    "id": "8bde3c00-9a53-453e-aa3f-98d81fafbcde",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "check_key_released",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "RebindKeys",
+    "path": "folders/Scripts/Framework/Essentials/RebindKeys.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "check_key_released",
+  "tags": [],
+  "resourceType": "GMScript",
 }

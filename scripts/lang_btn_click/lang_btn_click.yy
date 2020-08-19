@@ -1,8 +1,12 @@
 {
-    "id": "d1ab94fa-e21b-42ca-818a-bb258aa03559",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "lang_btn_click",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Language",
+    "path": "folders/Scripts/Framework/Essentials/Language.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "lang_btn_click",
+  "tags": [],
+  "resourceType": "GMScript",
 }

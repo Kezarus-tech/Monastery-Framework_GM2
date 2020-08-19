@@ -1,8 +1,12 @@
 {
-    "id": "d70e1118-352b-46a0-97a4-cebce4f0e384",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "gui_create_button",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "UI",
+    "path": "folders/Scripts/Framework/Essentials/UI.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "gui_create_button",
+  "tags": [],
+  "resourceType": "GMScript",
 }

@@ -1,8 +1,12 @@
 {
-    "id": "fd5fbf85-8e23-441f-bc6d-f7c82bd0f091",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "RebindKeysConfigs",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "RebindKeys",
+    "path": "folders/Scripts/Framework/Essentials/RebindKeys.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "RebindKeysConfigs",
+  "tags": [],
+  "resourceType": "GMScript",
 }

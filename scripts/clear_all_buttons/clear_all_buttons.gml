@@ -1,3 +1,8 @@
-with(objGUIButton){
-    buttonPressed = false;
+function clear_all_buttons() {
+	with(objGUIButton){
+	    buttonPressed = false;
+	}
+
+
+
 }

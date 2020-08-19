@@ -1,8 +1,12 @@
 {
-    "id": "046e8d6b-deae-40ae-b82e-89cf2e82720b",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "click_part_type",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "ParticlesLab",
+    "path": "folders/Scripts/Framework/Demo/ParticlesLab.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "click_part_type",
+  "tags": [],
+  "resourceType": "GMScript",
 }

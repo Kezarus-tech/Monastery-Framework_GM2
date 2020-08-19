@@ -1,8 +1,12 @@
 {
-    "id": "e6c59bba-3809-4d49-927d-9c9357a6ba17",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "check_key_pressed_internal",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "RebindKeys",
+    "path": "folders/Scripts/Framework/Essentials/RebindKeys.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "check_key_pressed_internal",
+  "tags": [],
+  "resourceType": "GMScript",
 }

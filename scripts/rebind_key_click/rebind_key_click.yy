@@ -1,8 +1,12 @@
 {
-    "id": "5cdd029d-7996-46bc-86a3-44053211dbbe",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "rebind_key_click",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "RebindKeys",
+    "path": "folders/Scripts/Framework/Essentials/RebindKeys.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "rebind_key_click",
+  "tags": [],
+  "resourceType": "GMScript",
 }

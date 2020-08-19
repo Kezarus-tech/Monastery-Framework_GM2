@@ -11,23 +11,28 @@
 /// @param  function_arg3*
 /// @param  function_arg4*
 /// @param  function_arg5*
+function gui_create_button() {
 
-// returns the object ID
+	// returns the object ID
 
-var inst = instance_create(argument[0], argument[1], objGUIButton);
+	var inst = instance_create(argument[0], argument[1], objGUIButton);
 
-inst.width = argument[2];
-inst.height = argument[3];
-inst.text = argument[4];
+	inst.width = argument[2];
+	inst.height = argument[3];
+	inst.text = argument[4];
 
-if( argument_count > 5 ){
-	inst.targetScript = argument[5];
+	if( argument_count > 5 ){
+		inst.targetScript = argument[5];
+	}
+
+	for (var i=6; i<argument_count; i++){
+	    inst.targetScriptArgs[i-6] = argument[i];
+	};
+
+
+	return inst;
+
+
+
+
 }
-
-for (var i=6; i<argument_count; i++){
-    inst.targetScriptArgs[i-6] = argument[i];
-};
-
-
-return inst;
-

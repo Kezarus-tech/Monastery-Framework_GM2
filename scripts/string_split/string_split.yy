@@ -1,8 +1,12 @@
 {
-    "id": "d4849ff0-a1da-4c4a-b78f-c79818069e43",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "string_split",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Util",
+    "path": "folders/Scripts/Framework/Essentials/Util.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "string_split",
+  "tags": [],
+  "resourceType": "GMScript",
 }

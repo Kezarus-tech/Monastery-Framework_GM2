@@ -1,31 +1,36 @@
 /// @description check_key_pressed_internal( key_map, PlayerActionEnum.[] )
+function check_key_pressed_internal(argument0, argument1) {
 
-/// @param key_map the map to check
-/// @param PlayerActionEnum.[] as enumerator option
+	/// @param key_map the map to check
+	/// @param PlayerActionEnum.[] as enumerator option
 
 
-var key_map = argument0;
-var arr = key_map[? argument1];
+	var key_map = argument0;
+	var arr = key_map[? argument1];
 
-if( is_undefined(arr) ){
-	return false;
-}else if( arr[KeyDataEnum.InputType] == InputTypeEnum.Nothing ){
-	return false;
-}else if( arr[KeyDataEnum.InputType] == InputTypeEnum.Keyboard ){
-	return keyboard_check_pressed(arr[KeyDataEnum.Value]);
-}else if( arr[KeyDataEnum.InputType] == InputTypeEnum.Mouse ){
-	switch(arr[KeyDataEnum.Value]){
-	case MB_WHEEL_UP:
-		return mouse_wheel_up();
-	break;
-	case MB_WHEEL_DOWN:
-		return mouse_wheel_down();
-	break;
-	default:
-		return mouse_check_button_pressed(arr[KeyDataEnum.Value]);
+	if( is_undefined(arr) ){
+		return false;
+	}else if( arr[KeyDataEnum.InputType] == InputTypeEnum.Nothing ){
+		return false;
+	}else if( arr[KeyDataEnum.InputType] == InputTypeEnum.Keyboard ){
+		return keyboard_check_pressed(arr[KeyDataEnum.Value]);
+	}else if( arr[KeyDataEnum.InputType] == InputTypeEnum.Mouse ){
+		switch(arr[KeyDataEnum.Value]){
+		case MB_WHEEL_UP:
+			return mouse_wheel_up();
+		break;
+		case MB_WHEEL_DOWN:
+			return mouse_wheel_down();
+		break;
+		default:
+			return mouse_check_button_pressed(arr[KeyDataEnum.Value]);
+		}
+	}else if( arr[KeyDataEnum.InputType] == InputTypeEnum.Gamepad ){
+		return gamepad_button_check_pressed(global.connected_gamepad, arr[KeyDataEnum.Value]);
 	}
-}else if( arr[KeyDataEnum.InputType] == InputTypeEnum.Gamepad ){
-	return gamepad_button_check_pressed(global.connected_gamepad, arr[KeyDataEnum.Value]);
-}
 
-return false;
+	return false;
+
+
+
+}

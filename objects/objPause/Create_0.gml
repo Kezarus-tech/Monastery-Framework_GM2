@@ -31,7 +31,7 @@ ds_list_add(lstExceptions, objMouseGui);
 //This is why I am not using deactivate all here =]
 
 with(all){
-    if( id != other ){
+    if( id != other.id ){
         var canBeDeactivated = true;
         
         for( var i=0; i<ds_list_size(other.lstExceptions); i++ ){

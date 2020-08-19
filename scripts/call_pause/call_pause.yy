@@ -1,8 +1,12 @@
 {
-    "id": "a2d2a49f-6ff7-4b3f-a859-f9ff043394c5",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "call_pause",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Demo",
+    "path": "folders/Scripts/Framework/Demo.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "call_pause",
+  "tags": [],
+  "resourceType": "GMScript",
 }

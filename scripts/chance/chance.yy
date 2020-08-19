@@ -1,8 +1,12 @@
 {
-    "id": "597c1f41-c5b2-44a8-a21f-31222605a9ec",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "chance",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Util",
+    "path": "folders/Scripts/Framework/Essentials/Util.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "chance",
+  "tags": [],
+  "resourceType": "GMScript",
 }

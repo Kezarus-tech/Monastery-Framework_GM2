@@ -1,8 +1,12 @@
 {
-    "id": "4c29df60-73ed-41bc-b977-7aa5fcf4f8dc",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "lang",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Language",
+    "path": "folders/Scripts/Framework/Essentials/Language.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "lang",
+  "tags": [],
+  "resourceType": "GMScript",
 }

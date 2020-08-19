@@ -1,8 +1,12 @@
 {
-    "id": "29b953be-9358-417e-9fae-1318dc84fae9",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "draw_nineslice_streched",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Util",
+    "path": "folders/Scripts/Framework/Essentials/Util.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "draw_nineslice_streched",
+  "tags": [],
+  "resourceType": "GMScript",
 }
