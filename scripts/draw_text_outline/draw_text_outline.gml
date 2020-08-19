@@ -9,10 +9,7 @@
 /// @param angle*
 /// @param alpha*
 function draw_text_outline() {
-
-
-	var 
-	    x1 = argument[0],
+	var x1 = argument[0],
 	    y1 = argument[1],
 	    text = argument[2],
 	    wSep = -1,
@@ -21,8 +18,8 @@ function draw_text_outline() {
 	    wAngle = 0,
 	    wAlpha = 1,
 	    c1 = c_black;
-
 	var c2 = draw_get_colour();
+	
 	if (argument_count > 3){ wSep   = argument[3]; }
 	if (argument_count > 4){ wWidth = argument[4]; }
 	if (argument_count > 5){ c1     = argument[5]; }
@@ -43,7 +40,4 @@ function draw_text_outline() {
 	draw_text_ext_transformed(x1, y1, string_hash_to_newline(text), wSep, wWidth, wScale, wScale, wAngle);
 
 	draw_set_alpha(1);
-
-
-
 }

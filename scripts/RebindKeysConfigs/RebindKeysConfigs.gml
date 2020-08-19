@@ -39,9 +39,4 @@ function RebindKeysConfigs() {
 		AlternativeValue = 5
 	}
 
-
-
-
-
-
 }

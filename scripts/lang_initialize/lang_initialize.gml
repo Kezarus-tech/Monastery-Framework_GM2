@@ -1,19 +1,15 @@
 /// @description lang_initialize( )
+// load the ini into a global variable
 function lang_initialize() {
 
-	// load the ini into a global variable
-
-#region LOAD INI
+	#region LOAD INI
 		ini_open("CONFIG.INI");
 		global.language = ini_read_string("prefs", "language", "English");
 		ini_close();
-#endregion
+	#endregion
 
-#region LOAD LANGUAGE DICTIONARY
+	#region LOAD LANGUAGE DICTIONARY
 		lang_load(global.language);
-#endregion
-
-
-
-
+	#endregion
+	
 }

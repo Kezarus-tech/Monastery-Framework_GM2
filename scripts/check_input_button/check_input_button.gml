@@ -1,12 +1,11 @@
 /// @description check_input_button()
+// Returns an array of the first input of keyboard(0), mouse(1) or gamepad(2). 
+// If no key is pressed returns -1.
+// returns:
+//	array[KeyDataEnum.InputType] = InputTypeEnum.[]
+//	array[KeyDataEnum.Value] = the actual value
+
 function check_input_button() {
-
-	// Returns an array of the first input of keyboard(0), mouse(1) or gamepad(2). 
-	// If no key is pressed returns -1.
-	// returns:
-	//	array[KeyDataEnum.InputType] = InputTypeEnum.[]
-	//	array[KeyDataEnum.Value] = the actual value
-
 	var arr;
 	arr[KeyDataEnum.InputType] = InputTypeEnum.Nothing;
 	arr[KeyDataEnum.Value] = -1;
@@ -47,6 +46,4 @@ function check_input_button() {
 	}
 
 	return arr;
-
-
 }

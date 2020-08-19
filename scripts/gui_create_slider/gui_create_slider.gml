@@ -8,10 +8,8 @@
 /// @param  valueMin*
 /// @param  valueMax*
 /// @param  valueUpdate*
+// returns the object ID
 function gui_create_slider() {
-
-	// returns the object ID
-
 	var inst = instance_create(argument[0], argument[1], objGUISlider);
 
 	with(inst){
@@ -45,11 +43,5 @@ function gui_create_slider() {
     
 	}
 
-
-
 	return inst;
-
-
-
-
 }

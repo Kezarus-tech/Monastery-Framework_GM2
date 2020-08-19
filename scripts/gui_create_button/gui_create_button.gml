@@ -11,10 +11,8 @@
 /// @param  function_arg3*
 /// @param  function_arg4*
 /// @param  function_arg5*
+// returns the object ID
 function gui_create_button() {
-
-	// returns the object ID
-
 	var inst = instance_create(argument[0], argument[1], objGUIButton);
 
 	inst.width = argument[2];
@@ -29,10 +27,5 @@ function gui_create_button() {
 	    inst.targetScriptArgs[i-6] = argument[i];
 	};
 
-
 	return inst;
-
-
-
-
 }

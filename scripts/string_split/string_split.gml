@@ -2,10 +2,8 @@
 /// @param text - the text to be proccessed
 /// @param delimiter - the 1 character to separete the array
 function string_split(argument0, argument1) {
-
 	var wText = argument0;
 	var wDelimiter = argument1;
-
 	var wSlot = 0;
 	var wArray;
 	var wTextPart = "";
@@ -28,8 +26,4 @@ function string_split(argument0, argument1) {
 	}
     
 	return wArray;
-
-
-
-
 }

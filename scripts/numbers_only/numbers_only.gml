@@ -30,7 +30,4 @@ function numbers_only(argument0, argument1) {
 	}else{
 		return argument1;
 	}
-
-
-
 }

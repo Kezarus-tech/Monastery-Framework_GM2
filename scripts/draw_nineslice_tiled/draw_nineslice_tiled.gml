@@ -53,8 +53,6 @@ function draw_nineslice_tiled() {
 	    draw_sprite_part_ext(sprite, choose(0, 0, irandom(wSprNumber)), slice_width*2,  slice_height, slice_width, min(slice_height, y2-yy-slice_height), x2-slice_width, yy, 1, 1, color, alpha); //Right
 	}
 
-
-
 	// Top & Bottom ----------------------------------------------------------------------------------------------------------
 
 	xx = x1;
@@ -71,7 +69,4 @@ function draw_nineslice_tiled() {
 	if(wRandom != -1){
 	    randomize();
 	}
-
-
-
 }

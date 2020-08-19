@@ -7,8 +7,6 @@
 /// @param  fontAlign* - fa_left, fa_center, fa_right
 /// @param  fontScale*
 function gui_create_label() {
-
-
 	var inst = instance_create(argument[1], argument[2], objGUILabel);
 	inst.text = argument[0];
 
@@ -28,6 +26,4 @@ function gui_create_label() {
 	}
 
 	return inst;
-
-
 }

@@ -24,9 +24,4 @@ function screen_shake(argument0, argument1, argument2) {
 	    alarm[1] = argument2;
 	}
 
-
-
-
-
-
 }

@@ -1,10 +1,8 @@
 /// @description key_code_to_string( code )
+/// @param code : constants or keyboard strings
+
+// convert a constant or a keyboard key to a string. Ex.: vk_space becomes Space
 function key_code_to_string(argument0) {
-
-	/// @param code : constants or keyboard strings
-
-	// convert a constant or a keyboard key to a string. Ex.: vk_space becomes Space
-
 	var code = argument0;
 	var result = "";
 	if (code >= 48 && code <= 90) {
@@ -97,6 +95,4 @@ function key_code_to_string(argument0) {
 	}
 
 	return string(result);
-
-
 }

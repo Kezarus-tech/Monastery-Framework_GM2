@@ -5,7 +5,6 @@
 /// @param valign fa_top / fa_middle / fa_bottom
 /// @param alpha
 function draw_set_font_ext() {
-
 	var wFont = argument[0];
 	var wColour = c_white;
 	if(argument_count>1){ wColour = argument[1] }
@@ -21,7 +20,4 @@ function draw_set_font_ext() {
 	draw_set_alpha(wAlpha);
 	draw_set_halign(wHalign);
 	draw_set_valign(wValign);
-
-
-
 }

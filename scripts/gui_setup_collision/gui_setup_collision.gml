@@ -27,7 +27,4 @@ function gui_setup_collision(argument0) {
 	        buttonBottom    = buttonTop     + height - 1;
 	    }
 	}
-
-
-
 }

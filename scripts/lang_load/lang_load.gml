@@ -1,18 +1,13 @@
 /// @description lang_load( archive )
+/// @param archive : the archive name on the path Included Files/Framework/Languages/[archive name].txt
+// load the dictionary for the language support
 function lang_load(argument0) {
-
-	///@param archive : the archive name on the path Included Files/Framework/Languages/[archive name].txt
-
-	// load the dictionary for the language support
-
-
 	var fileName = working_directory + "Framework/Languages/" + argument0 + ".txt";
 
 	if( !file_exists(fileName) ){
 		alert("LANGUAGE ERROR - " + argument0 + ".txt doen't exists");
 		return false;
 	}
-
 
 	if( variable_global_exists("language_map") ){
 		ds_map_destroy(global.language_map);
@@ -49,6 +44,4 @@ function lang_load(argument0) {
 	file_text_close(file);
 
 	return true;
-
-
 }

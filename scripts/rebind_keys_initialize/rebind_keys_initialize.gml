@@ -1,9 +1,7 @@
 /// @description rebind_keys_initialize()
+// This function initialises a list with all controlls, it's names and default values
+// It is called on objInitializer->Create Event
 function rebind_keys_initialize() {
-
-	// This function initialises a list with all controlls, it's names and default values
-	// It is called on objInitializer->Create Event
-
 	// MAP ALL YOUR PlayerActionEnum HERE
 	global.lstControls = ds_list_create();
 	var controls = global.lstControls;
@@ -21,9 +19,5 @@ function rebind_keys_initialize() {
 	ds_list_add(controls, [PlayerActionEnum.WeaponNext, "Weapon Next",		InputTypeEnum.Nothing,  -1,			InputTypeEnum.Mouse,	MB_WHEEL_UP ]);
 	ds_list_add(controls, [PlayerActionEnum.WeaponPrev, "Weapon Previous",	InputTypeEnum.Nothing,  -1,			InputTypeEnum.Mouse,	MB_WHEEL_DOWN ]);
 
-
 	rebind_keys_load();
-
-
-
 }

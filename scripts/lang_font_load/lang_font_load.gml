@@ -1,8 +1,6 @@
 /// @description lang_font_load( font_family )
+///@param font_family LATIN, CYRILLIC, JAPANESE, CHINESE
 function lang_font_load(argument0) {
-
-	///@param font_family LATIN, CYRILLIC, JAPANESE, CHINESE
-
 	var font, fontSmall, fontLarge;
 	var fontName = "Audiowide-Regular.ttf";
 	var path = working_directory + "Framework/Languages/Fonts/";
@@ -40,12 +38,7 @@ function lang_font_load(argument0) {
 		font_delete(global.language_font_large);
 	}
 
-
 	global.language_font = font;
 	global.language_font_small = fontSmall;
 	global.language_font_large = fontLarge;
-
-
-
-
 }

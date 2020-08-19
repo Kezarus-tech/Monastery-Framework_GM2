@@ -4,7 +4,6 @@
 /// @param event_perform type
 /// @param event_perform number
 function gui_modal() {
-
 	//Pause the game
 	//Shows a text and options on the screen
 
@@ -27,7 +26,6 @@ function gui_modal() {
 		ev_number = argument[3];
 	}
 
-
 	var owner = id; //who called the function
 
 	var inst = instance_create(0, 0, objPause);
@@ -42,14 +40,4 @@ function gui_modal() {
 	inst.owner = owner;
 
 	return inst;
-
-
-
-
-
-
-
-
-
-
 }

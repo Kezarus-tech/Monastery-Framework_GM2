@@ -1,10 +1,7 @@
 /// @description check_key_released_internal( key_map, PlayerActionEnum.[] )
+/// @param key_map the map to check
+/// @param PlayerActionEnum.[] as enumerator option
 function check_key_released_internal(argument0, argument1) {
-
-	/// @param key_map the map to check
-	/// @param PlayerActionEnum.[] as enumerator option
-
-
 	var key_map = argument0;
 	var arr = key_map[? argument1];
 
@@ -30,7 +27,4 @@ function check_key_released_internal(argument0, argument1) {
 	}
 
 	return false;
-
-
-
 }

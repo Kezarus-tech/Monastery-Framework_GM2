@@ -8,7 +8,6 @@
 function draw_nineslice_streched(argument0, argument1, argument2, argument3, argument4, argument5) {
 
 	/// CREDIT TO: HeartBeast, https://www.youtube.com/watch?v=GkH5CIamSyA
-
 	var sprite = argument0;
 	var x1 = argument1;
 	var y1 = argument2;
@@ -40,14 +39,5 @@ function draw_nineslice_streched(argument0, argument1, argument2, argument3, arg
 	draw_sprite_part_ext(sprite, 0, 0, slice_height*2, slice_width, slice_height*2, x1, y2-slice_height, 1, 1, color, 1); //Left
 	draw_sprite_part_ext(sprite, 0, slice_width, slice_height*2, slice_width, slice_height, x1+slice_width, y2-slice_height, (width-slice_width*2)/slice_width, 1, color, 1); //Middle
 	draw_sprite_part_ext(sprite, 0, slice_width*2, slice_height*2, slice_width, slice_height, x2-slice_width, y2-slice_height, 1, 1, color, 1); //Right
-
-
-
-
-
-
-
-
-
 
 }

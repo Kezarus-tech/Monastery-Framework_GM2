@@ -1,11 +1,9 @@
 /// @description rebind_key_click( PlayerActionEnum.[], Alternative* )
+/// @param PlayerActionEnum.[] : an enum option
+/// @param Alternative* : an enum option
+
+// Calls a pause and wait for a key press
 function rebind_key_click() {
-
-	/// @param PlayerActionEnum.[] : an enum option
-	/// @param Alternative* : an enum option
-
-	// Calls a pause and wait for a key press
-
 	with(objRebindKeysController){
 		// Variables set on objRebindKeysController
 		rebindKey = argument[0];
@@ -22,10 +20,4 @@ function rebind_key_click() {
 		//Keep objRebindKeysController active
 		instance_activate_object(self);
 	}
-
-
-
-
-
-
 }

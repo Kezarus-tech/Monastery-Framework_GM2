@@ -1,10 +1,9 @@
 /// @description rebind_keys_load()
+
+// Creates the maps needed for 
+// Read the default commands based on the list
+// And the CONFIG.INI
 function rebind_keys_load() {
-
-	// Creates the maps needed for 
-	// Read the default commands based on the list
-	// And the CONFIG.INI
-
 	//DESTROY MAP
 	if( variable_global_exists("key_mapping") ){
 		if( ds_exists(global.key_mapping, ds_type_map) ){
@@ -48,10 +47,5 @@ function rebind_keys_load() {
 		ds_map_add(global.key_mapping_alt, enumKey, arrCommand);
 	}
 
-
 	ini_close();
-
-
-
-
 }
