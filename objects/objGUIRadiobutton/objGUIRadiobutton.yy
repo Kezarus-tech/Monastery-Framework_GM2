@@ -31,7 +31,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "GUI",
-    "path": "folders/Objects/Framework/Essentials/GUI.yy",
+    "path": "folders/MonasteryFramework/05-Objects/GUI.yy",
   },
   "resourceVersion": "1.0",
   "name": "objGUIRadiobutton",

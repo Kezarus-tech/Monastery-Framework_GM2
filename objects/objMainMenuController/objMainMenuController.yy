@@ -27,7 +27,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "MainMenu",
-    "path": "folders/Objects/Framework/Demo/MainMenu.yy",
+    "path": "folders/MonasteryFramework/00-Demo/Objects/MainMenu.yy",
   },
   "resourceVersion": "1.0",
   "name": "objMainMenuController",

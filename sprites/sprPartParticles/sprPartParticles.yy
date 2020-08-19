@@ -125,7 +125,7 @@
   ],
   "parent": {
     "name": "ParticlesLab",
-    "path": "folders/Sprites/Framework/ParticlesLab.yy",
+    "path": "folders/MonasteryFramework/01-Sprites/ParticlesLab.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprPartParticles",

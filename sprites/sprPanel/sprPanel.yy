@@ -77,7 +77,7 @@
   ],
   "parent": {
     "name": "GUI",
-    "path": "folders/Sprites/Framework/GUI.yy",
+    "path": "folders/MonasteryFramework/01-Sprites/GUI.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprPanel",

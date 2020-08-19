@@ -125,8 +125,8 @@
   "canGenerateBitmap": true,
   "maintainGms1Font": false,
   "parent": {
-    "name": "Framework",
-    "path": "folders/Fonts/Framework.yy",
+    "name": "03-Fonts",
+    "path": "folders/MonasteryFramework/03-Fonts.yy",
   },
   "resourceVersion": "1.0",
   "name": "fntStandard",

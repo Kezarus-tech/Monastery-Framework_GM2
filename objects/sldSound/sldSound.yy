@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "OptionsMenu",
-    "path": "folders/Objects/Framework/Essentials/OptionsMenu.yy",
+    "path": "folders/MonasteryFramework/05-Objects/OptionsMenu.yy",
   },
   "resourceVersion": "1.0",
   "name": "sldSound",

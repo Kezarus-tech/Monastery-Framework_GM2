@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Easy GUI",
-    "path": "folders/Objects/Framework/Demo/Easy GUI.yy",
+    "path": "folders/MonasteryFramework/00-Demo/Objects/Easy GUI.yy",
   },
   "resourceVersion": "1.0",
   "name": "objGUIEasyPanel",

@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "RebindKeysMenu",
-    "path": "folders/Objects/Framework/Essentials/RebindKeysMenu.yy",
+    "path": "folders/MonasteryFramework/05-Objects/RebindKeysMenu.yy",
   },
   "resourceVersion": "1.0",
   "name": "objRebindKeysController",

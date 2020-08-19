@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Language",
-    "path": "folders/Scripts/Framework/Essentials/Language.yy",
+    "name": "02-Language",
+    "path": "folders/MonasteryFramework/04-Scripts/02-Language.yy",
   },
   "resourceVersion": "1.0",
   "name": "lang_btn_click",

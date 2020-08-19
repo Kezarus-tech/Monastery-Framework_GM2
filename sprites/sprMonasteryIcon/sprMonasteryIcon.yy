@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Logo",
-    "path": "folders/Sprites/Framework/Logo.yy",
+    "path": "folders/MonasteryFramework/00-Demo/Logo.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprMonasteryIcon",

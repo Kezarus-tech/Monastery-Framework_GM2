@@ -23,8 +23,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects/Framework/Essentials/Objects.yy",
+    "name": "General Objects",
+    "path": "folders/MonasteryFramework/05-Objects/General Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "objInitializer",

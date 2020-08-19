@@ -69,7 +69,7 @@
   ],
   "parent": {
     "name": "Makeshift",
-    "path": "folders/Sprites/Framework/GUI/Makeshift.yy",
+    "path": "folders/MonasteryFramework/01-Sprites/Framework/GUI/Makeshift.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprMakeshiftBrown",

@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "RebindKeys",
-    "path": "folders/Scripts/Framework/Essentials/RebindKeys.yy",
+    "name": "03-RebindKeys",
+    "path": "folders/MonasteryFramework/04-Scripts/03-RebindKeys.yy",
   },
   "resourceVersion": "1.0",
   "name": "rebind_keys_load",

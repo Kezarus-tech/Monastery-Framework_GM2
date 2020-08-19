@@ -14,7 +14,7 @@
   "duration": 31.60965,
   "parent": {
     "name": "Music",
-    "path": "folders/Sounds/Music.yy",
+    "path": "folders/MonasteryFramework/02-Sounds/Music.yy",
   },
   "resourceVersion": "1.0",
   "name": "musicChant",

@@ -32,7 +32,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "ParticlesLab",
-    "path": "folders/Objects/Framework/Demo/ParticlesLab.yy",
+    "path": "folders/MonasteryFramework/00-Demo/Objects/ParticlesLab.yy",
   },
   "resourceVersion": "1.0",
   "name": "btnPartBlend",

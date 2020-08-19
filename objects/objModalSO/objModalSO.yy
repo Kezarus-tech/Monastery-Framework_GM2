@@ -24,7 +24,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "ModalSO",
-    "path": "folders/Objects/Framework/Demo/ModalSO.yy",
+    "path": "folders/MonasteryFramework/00-Demo/Objects/ModalSO.yy",
   },
   "resourceVersion": "1.0",
   "name": "objModalSO",

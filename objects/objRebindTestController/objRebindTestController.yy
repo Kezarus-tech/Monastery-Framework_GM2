@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "RebindKeys",
-    "path": "folders/Objects/Framework/Demo/RebindKeys.yy",
+    "path": "folders/MonasteryFramework/00-Demo/Objects/RebindKeys.yy",
   },
   "resourceVersion": "1.0",
   "name": "objRebindTestController",

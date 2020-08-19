@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "UI",
-    "path": "folders/Scripts/Framework/Essentials/UI.yy",
+    "name": "01-UI",
+    "path": "folders/MonasteryFramework/04-Scripts/01-UI.yy",
   },
   "resourceVersion": "1.0",
   "name": "gui_create_label",

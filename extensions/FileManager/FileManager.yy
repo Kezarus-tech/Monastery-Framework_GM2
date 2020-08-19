@@ -222,8 +222,8 @@
   "androidPermissions": [],
   "copyToTargets": 202375362,
   "parent": {
-    "name": "Extensions",
-    "path": "folders/Extensions.yy",
+    "name": "07-Extensions",
+    "path": "folders/MonasteryFramework/07-Extensions.yy",
   },
   "resourceVersion": "1.0",
   "name": "FileManager",

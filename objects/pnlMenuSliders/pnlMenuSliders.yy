@@ -27,7 +27,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "GUI Elements",
-    "path": "folders/Objects/Framework/Demo/GUI Elements.yy",
+    "path": "folders/MonasteryFramework/00-Demo/Objects/GUI Elements.yy",
   },
   "resourceVersion": "1.0",
   "name": "pnlMenuSliders",

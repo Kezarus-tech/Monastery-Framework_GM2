@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Shake",
-    "path": "folders/Objects/Framework/Demo/Shake.yy",
+    "path": "folders/MonasteryFramework/00-Demo/Objects/Shake.yy",
   },
   "resourceVersion": "1.0",
   "name": "pnlShake",

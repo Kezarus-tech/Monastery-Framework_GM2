@@ -25,7 +25,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Modals",
-    "path": "folders/Objects/Framework/Demo/Modals.yy",
+    "path": "folders/MonasteryFramework/00-Demo/Objects/Modals.yy",
   },
   "resourceVersion": "1.0",
   "name": "objOrbital",

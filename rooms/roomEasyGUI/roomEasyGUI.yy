@@ -54,8 +54,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Demo",
-    "path": "folders/Rooms/Framework/Demo.yy",
+    "name": "Rooms",
+    "path": "folders/MonasteryFramework/00-Demo/Rooms.yy",
   },
   "resourceVersion": "1.0",
   "name": "roomEasyGUI",

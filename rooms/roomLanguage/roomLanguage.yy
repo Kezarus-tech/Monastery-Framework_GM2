@@ -46,8 +46,8 @@
     "PhysicsWorldPixToMetres": 0.1,
   },
   "parent": {
-    "name": "Framework Essentials",
-    "path": "folders/Rooms/Framework Essentials.yy",
+    "name": "06-Rooms",
+    "path": "folders/MonasteryFramework/06-Rooms.yy",
   },
   "resourceVersion": "1.0",
   "name": "roomLanguage",

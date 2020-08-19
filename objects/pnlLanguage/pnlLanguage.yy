@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "LanguageMenu",
-    "path": "folders/Objects/Framework/Essentials/LanguageMenu.yy",
+    "path": "folders/MonasteryFramework/05-Objects/LanguageMenu.yy",
   },
   "resourceVersion": "1.0",
   "name": "pnlLanguage",

@@ -14,7 +14,7 @@
   "duration": 0.098832,
   "parent": {
     "name": "AlwaysOn",
-    "path": "folders/Sounds/Sound/AlwaysOn.yy",
+    "path": "folders/MonasteryFramework/02-Sounds/Sound/AlwaysOn.yy",
   },
   "resourceVersion": "1.0",
   "name": "sndClick",
