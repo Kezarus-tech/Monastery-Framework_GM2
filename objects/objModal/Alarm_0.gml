@@ -12,7 +12,7 @@ var buttonHeight = 30;
 var buttonOffset = 5;
 
 
-for(var i=0; i<array_length_1d(arrOptions); i++){
+for(var i=0; i<array_length(arrOptions); i++){
     inst = instance_create(wx, wy, objModalButton);
     inst.text = arrOptions[i];
     inst.width = buttonWidth;

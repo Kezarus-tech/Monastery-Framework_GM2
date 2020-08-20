@@ -17,7 +17,7 @@ audio_sound_pitch(snd, random_range(0.9, 1.1));
 #region EXECUTE SCRIPT
 
 if( targetScript != noone ){
-    var argsSize = array_length_1d(targetScriptArgs);
+    var argsSize = array_length(targetScriptArgs);
     
     if( argsSize == 0 ){
         script_execute(targetScript);

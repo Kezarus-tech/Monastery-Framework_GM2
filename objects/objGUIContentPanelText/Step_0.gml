@@ -15,7 +15,7 @@ if(mouseOver){
     }
     
     if(changed){
-        textIndex = clamp( textIndex, 0, max(array_length_1d(arrText)-maxLines, 0) );
+        textIndex = clamp( textIndex, 0, max(array_length(arrText)-maxLines, 0) );
         scrollBar.valueUpdate = textIndex;
     }
 }
@@ -23,7 +23,7 @@ if(mouseOver){
 
 #region UPDATE BY THE SCROLLBAR
 if(instance_exists(scrollBar)){
-    textIndex = clamp(scrollBar.valueFinal, 0, array_length_1d(arrText));
+    textIndex = clamp(scrollBar.valueFinal, 0, array_length(arrText));
 }
 
 #endregion

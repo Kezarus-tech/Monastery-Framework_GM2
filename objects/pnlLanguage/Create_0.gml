@@ -14,7 +14,7 @@ arrLanguages[4] = "Japanese";
 arrLanguages[5] = "Chinese";
 
 width = (offset*2) + btnWidth;
-height = (offset*2) + (btnHeight * 2) + ((btnHeight+btnOffset) * array_length_1d(arrLanguages));
+height = (offset*2) + (btnHeight * 2) + ((btnHeight+btnOffset) * array_length(arrLanguages));
 x = (surface_get_width(application_surface) div 2)-(width div 2);
 y = 50;
 
@@ -22,7 +22,7 @@ var wx = x + offset;
 var wy = y + offset;
 var inst;
 
-for(var i=0; i<array_length_1d(arrLanguages); i++){
+for(var i=0; i<array_length(arrLanguages); i++){
 	inst = gui_create_button(wx, wy, btnWidth, btnHeight, lang(arrLanguages[i]), lang_btn_click, arrLanguages[i]);
 	wy += btnHeight + btnOffset;
 }

@@ -62,6 +62,6 @@ for(var i=1; i<=string_length(text); i++){
 scrollBar = gui_create_slider(
                 x+width-scrollWidth, y,
                 scrollWidth, height, scrollWidth-2, scrollWidth, 
-                0, array_length_1d(arrText)-maxLines);
+                0, array_length(arrText)-maxLines);
 
 #endregion

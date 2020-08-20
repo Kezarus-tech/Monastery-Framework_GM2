@@ -50,12 +50,12 @@ function click_part_import() {
 					mapCurrent[? "color2use"] = false;
 					mapCurrent[? "color3use"] = false;
 				
-					if( array_length_1d(arr) > 2 ){
+					if( array_length(arr) > 2 ){
 						mapCurrent[? "color2"] = numbers_only(arr[2], 0);
 						mapCurrent[? "color2use"] = true;
 					}
 				
-					if( array_length_1d(arr) > 3 ){
+					if( array_length(arr) > 3 ){
 						mapCurrent[? "color3"] = numbers_only(arr[3], 0);
 						mapCurrent[? "color3use"] = true;
 					}
@@ -64,12 +64,12 @@ function click_part_import() {
 					mapCurrent[? "alpha2use"] = false;
 					mapCurrent[? "alpha3use"] = false;
 				
-					if( array_length_1d(arr) > 2 ){
+					if( array_length(arr) > 2 ){
 						mapCurrent[? "alpha2"] = numbers_only(arr[2], 0);
 						mapCurrent[? "alpha2use"] = true;
 					}
 				
-					if( array_length_1d(arr) > 3 ){
+					if( array_length(arr) > 3 ){
 						mapCurrent[? "alpha3"] = numbers_only(arr[3], 0);
 						mapCurrent[? "alpha3use"] = true;
 					}
