@@ -9,7 +9,7 @@ var btnHeight = 40;
 var btnOffset = 5;
 
 width = (offset*2) + btnWidth;
-height = (offset*2) + btnHeight + ((btnHeight+btnOffset) * 9);
+height = (offset*2) + btnHeight + ((btnHeight+btnOffset) * 10);
 
 x = (ww div 2) //middle of the screen
     -(width div 2);
@@ -41,6 +41,9 @@ gui_create_button(wx, wy, btnWidth, btnHeight, "Rebind Keys", func_room_goto, ro
 
 wy += btnHeight + btnOffset;
 gui_create_button(wx, wy, btnWidth, btnHeight, "Shake", func_room_goto, roomShake);
+
+wy += btnHeight + btnOffset;
+gui_create_button(wx, wy, btnWidth, btnHeight, "Loaders", func_room_goto, roomLoaders);
 
 wy += btnHeight + btnOffset;
 gui_create_button(wx, wy, btnWidth, btnHeight, "Modals OS", func_room_goto, roomModalSO);

@@ -1,0 +1,16 @@
+{
+  "field_string": "myString",
+  "field_number": 123,
+  "field_bool": true,
+  "field_null": null,
+  "field_array": [
+    "Test1",
+    "Test2",
+    "Test3"
+  ],
+  "field_object": {
+    "field1": "A",
+    "field2": 1,
+    "field3": true
+  }
+}

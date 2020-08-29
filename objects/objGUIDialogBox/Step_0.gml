@@ -12,7 +12,6 @@ if(mouseOver || dontNeedToBeOnFocus){
             textTimerNow = clamp(textTimerNow/2, 1, 10000);
             alarm[1] = 1;
         }
-        
     }
 }
 #endregion
