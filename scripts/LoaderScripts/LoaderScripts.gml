@@ -1,6 +1,6 @@
 /// @description json_loader
 /// @param path: will load all Jsons on this path (non-recursive)
-/// @param globalVarString: the global variable to store the map cointaining all the Jsons
+/// @param globalVarString: the global variable to store the map cointaining all the Jsons, files must end in .json
 function json_loader(path, globalVarString) {
 	var errors = "";
 	var rootDirectory = working_directory + path;
