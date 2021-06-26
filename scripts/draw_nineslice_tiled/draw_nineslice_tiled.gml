@@ -1,3 +1,5 @@
+//THIS FUNCTION IS DEPRECATED AND SHOULD NOT BE USED
+
 /// @description draw_nineslice_tiled( sprite, x1, y1, x2, y2, color, alpha, [random] )
 /// @param sprite
 /// @param x1
@@ -7,6 +9,7 @@
 /// @param color
 /// @param alpha
 /// @param random
+
 function draw_nineslice_tiled() {
 
 	var sprite = argument[0];

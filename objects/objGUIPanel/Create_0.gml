@@ -19,7 +19,6 @@ origin = GUI_TOPLEFT; // GUI_TOPLEFT or GUI_CENTER
 
 detectorPosSize = 0;
 image_blend = c_ltgray;
-mySeed = irandom(50000);
 
 //BASIC VARS
 buttonX         = 0;

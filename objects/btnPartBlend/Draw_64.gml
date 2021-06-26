@@ -1,3 +1,7 @@
+if( sprite_index != -1 ){
+	draw_sprite_stretched_ext(	sprite_index, 0, 
+								buttonLeft, buttonTop, buttonRight-buttonLeft, buttonBottom-buttonTop, 
+								myColor, image_alpha );
+}
 
-draw_nineslice_tiled( sprite_index, buttonLeft, buttonTop, buttonRight, buttonBottom, myColor, image_alpha, mySeed );
 

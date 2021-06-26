@@ -1,6 +1,9 @@
 /// @description DRAW FRAME
-draw_nineslice_tiled( sprite_index, buttonLeft, buttonTop, buttonRight, buttonBottom, image_blend, image_alpha, mySeed );
-
+if( sprite_index != -1 ){
+	draw_sprite_stretched_ext(	sprite_index, 0, 
+								buttonLeft, buttonTop, buttonRight-buttonLeft, buttonBottom-buttonTop, 
+								image_blend, image_alpha );
+}
 
 
 
