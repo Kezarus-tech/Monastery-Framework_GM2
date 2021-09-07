@@ -130,6 +130,8 @@
       ],"ProxyFiles":[
         {"TargetMask":1,"resourceVersion":"1.0","name":"libfilesystem.dylib","tags":[],"resourceType":"GMProxyFile",},
         {"TargetMask":7,"resourceVersion":"1.0","name":"libfilesystem.so","tags":[],"resourceType":"GMProxyFile",},
+        {"TargetMask":6,"resourceVersion":"1.0","name":"libfilesystem_x64.dll","tags":[],"resourceType":"GMProxyFile",},
+        {"TargetMask":7,"resourceVersion":"1.0","name":"libdlgmod_ARM.so","tags":[],"resourceType":"GMProxyFile",},
       ],"copyToTargets":202375362,"order":[
         {"name":"file_copy","path":"extensions/libfilesystem/libfilesystem.yy",},
         {"name":"file_rename","path":"extensions/libfilesystem/libfilesystem.yy",},
