@@ -67,6 +67,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9741be9c-695f-49f3-9bfd-42ea30b31be1","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "GUI",
     "path": "folders/MonasteryFramework/01-Sprites/GUI.yy",

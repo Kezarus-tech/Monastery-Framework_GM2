@@ -123,6 +123,7 @@
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"346112f0-cbb6-4af6-8bcd-1aa7ed48557d","tags":[],"resourceType":"GMImageLayer",},
   ],
+  "nineSlice": null,
   "parent": {
     "name": "ParticlesLab",
     "path": "folders/MonasteryFramework/01-Sprites/ParticlesLab.yy",
