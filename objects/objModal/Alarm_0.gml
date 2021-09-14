@@ -14,7 +14,7 @@ var buttonOffset = 5;
 
 for(var i=0; i<array_length(arrOptions); i++){
     inst = instance_create(wx, wy, objModalButton);
-    inst.text = arrOptions[i];
+    inst.text = arrOptions;
     inst.width = buttonWidth;
     inst.height = buttonHeight;
     inst.depth = depth-1; //just above the modal

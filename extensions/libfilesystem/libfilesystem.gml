@@ -28,8 +28,10 @@ if (os_type == os_windows) {
 
 #define generate_working_directory
 // generate_working_directory() - Call this Function at Game Start
+// Sets get_working_directory() to Ubuntu (Linux) Assets SubFolder
 // Sets get_working_directory() to Mac App Bundle Resources Folder
 
+if (os_type == os_linux)  { return set_working_directory(working_directory + "/assets/"); }
 if (os_type != os_macosx) { return true; }
 
 success = false; 
