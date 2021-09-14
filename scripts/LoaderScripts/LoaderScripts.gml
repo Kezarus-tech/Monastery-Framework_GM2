@@ -62,5 +62,4 @@ function json_loader(path, globalVarString) {
 
 		file_text_close(logFile);
 	#endregion
-
 }
