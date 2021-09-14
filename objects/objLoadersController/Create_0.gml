@@ -11,7 +11,7 @@ gui_create_button(wx, wy, btnWidth, btnHeight, "Main Menu", func_room_goto, room
 
 // LOAD JSONS
 global.mapJsons = -1;
-var path = @"Framework/LoaderExample/";
+var path = string_lower(@"Framework/LoaderExample/");
 var globalVarString = "mapJsons";
 json_loader(path, globalVarString);
 

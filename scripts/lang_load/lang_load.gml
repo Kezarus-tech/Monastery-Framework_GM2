@@ -2,10 +2,10 @@
 /// @param archive : the archive name on the path Included Files/Framework/Languages/[archive name].txt
 // load the dictionary for the language support
 function lang_load(argument0) {
-	var fileName = working_directory + "Framework/Languages/" + argument0 + ".txt";
+	var fileName = working_directory + string_lower("Framework/Languages/" + argument0 + ".txt");
 
 	if( !file_exists(fileName) ){
-		alert("LANGUAGE ERROR - " + argument0 + ".txt doen't exists");
+		alert("LANGUAGE ERROR - " + string_lower(argument0) + ".txt doen't exists");
 		return false;
 	}
 
@@ -30,7 +30,7 @@ function lang_load(argument0) {
 		arr = string_split(textLine, "|");
 	
 		if( ds_map_exists(dic, arr[0]) ){
-			alert("LANGUAGE ERROR - " + argument0 + ".txt" + " have a duplicated entry for key: " + arr[0]);
+			alert("LANGUAGE ERROR - " + string_lower(argument0) + ".txt" + " have a duplicated entry for key: " + arr[0]);
 		}else{
 			if( arr[0] == "<FONT-FAMILY>" ){
 				global.language_font_family = arr[1];

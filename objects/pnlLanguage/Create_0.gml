@@ -23,7 +23,7 @@ var wy = y + offset;
 var inst;
 
 for(var i=0; i<array_length(arrLanguages); i++){
-	inst = gui_create_button(wx, wy, btnWidth, btnHeight, lang(arrLanguages[i]), lang_btn_click, arrLanguages[i]);
+	inst = gui_create_button(wx, wy, btnWidth, btnHeight, lang(arrLanguages), lang_btn_click, arrLanguages);
 	wy += btnHeight + btnOffset;
 }
 
