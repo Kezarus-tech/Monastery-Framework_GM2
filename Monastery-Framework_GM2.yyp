@@ -252,7 +252,7 @@
     {"CopyToMask":-1,"filePath":"datafiles/Framework/Languages/Fonts","resourceVersion":"1.0","name":"NotoSans-Bold.ttf","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
-    "IDEVersion": "23.1.1.382",
+    "IDEVersion": "2.3.4.580",
   },
   "resourceVersion": "1.4",
   "name": "Monastery-Framework_GM2",
