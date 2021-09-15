@@ -23,7 +23,7 @@ function json_loader(path, globalVarString) {
 
 	#region LOAD ALL FILES
 		var fileKey, filePath, file, jsonData;
-		var fileName = directory_contents_first(rootDirectory, "*.json", true, false);
+		var fileName = file_find_first(rootDirectory + "*.json", 0); // fa_* consts are Window-only
 		while(fileName != ""){
 			fileName = string_upper(fileName);
 			fileKey = string_replace_all(fileName, ".JSON", "");
@@ -45,9 +45,9 @@ function json_loader(path, globalVarString) {
 
 			file_text_close(file);
 	
-		    fileName = directory_contents_next();
+		    fileName = file_find_next();
 		}
-		directory_contents_close();
+		file_find_close();
 	#endregion
 
 
