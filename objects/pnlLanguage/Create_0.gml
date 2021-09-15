@@ -23,10 +23,9 @@ var wy = y + offset;
 var inst;
 
 for(var i=0; i<array_length(arrLanguages); i++){
-	inst = gui_create_button(wx, wy, btnWidth, btnHeight, lang(arrLanguages), lang_btn_click, arrLanguages);
+	inst = gui_create_button(wx, wy, btnWidth, btnHeight, lang(arrLanguages[i]), lang_btn_click, arrLanguages[i]);
 	wy += btnHeight + btnOffset;
 }
 
 wy += btnHeight;
 inst = gui_create_button(wx, wy, btnWidth, btnHeight, lang("Main Menu"), func_room_goto, roomMainFramework);
-
