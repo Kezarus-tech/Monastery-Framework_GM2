@@ -29,4 +29,3 @@ for(var i=0; i<array_length(arrLanguages); i++){
 
 wy += btnHeight;
 inst = gui_create_button(wx, wy, btnWidth, btnHeight, lang("Main Menu"), func_room_goto, roomMainFramework);
-
