@@ -254,6 +254,6 @@
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"NotoSans-Bold.ttf","CopyToMask":-1,"filePath":"datafiles/Framework/Languages/Fonts",},
   ],
   "MetaData": {
-    "IDEVersion": "2022.11.0.54",
+    "IDEVersion": "2022.0.0.19",
   },
 }
